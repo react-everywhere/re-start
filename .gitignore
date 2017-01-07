@@ -1,8 +1,35 @@
 
-.gitignore
 .idea/
-android/
-ios/
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# BUCK
+buck-out/
+\.buckd/
+android/app/libs
+*.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+
 ### Xcode ###
 # Xcode
 #
@@ -211,4 +238,10 @@ jspm_packages
 .yarn-integrity
 
 
-# End of https://www.gitignore.io/api/xcode,android,intellij,webstorm,node
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
