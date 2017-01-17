@@ -13,11 +13,13 @@ This starter kit has different branches based on what general requirements are(m
 ---
 
 ##Wiring Up
-`git clone https://yourGithubUsername@github.com/amoghbanta/reactNativeEverywhere.git yourProjectName`<br/>
-`cd yourProjectName` <br/>
-`git checkout theBranchYouNeed`<br/>
-`rm -rf .git`<br/>
-`npm i`<br/>
+``` javascript
+git clone https://yourGithubUsername@github.com/amoghbanta/reactNativeEverywhere.git yourProjectName
+cd yourProjectName
+git checkout theBranchYouNeed
+rm -rf .git
+npm i
+```
 ---
 
 ##Run you project
