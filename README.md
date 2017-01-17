@@ -47,6 +47,7 @@ react-native CLI (`npm install -g react-native-cli`)
 - [ ] support for macOS([react-native-macOS](https://github.com/ptmt/react-native-macos))<br/>
 - [ ] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
 - [ ] improve webpack config for web <br/>
+
 ---
 ##Contributing
 This starter kit is still in very early stage. All your suggestions and PRs and welcome.
