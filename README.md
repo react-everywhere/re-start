@@ -1,18 +1,25 @@
-# ReactNativeEverywhere
+# ReactNativeEverywhere :globe_with_meridians: :iphone: :computer:
 
-This project  is an attempt to:
+This project  is an attempt to: 
 * Target multiple platforms(Android, iOS, web, windows and macOS) with react native' APIs.
 * Follow best practices while doing the above.
-* Cut out the time and effort it takes to setup the project(based on create-react-app)
-
+* Cut out the time and effort it takes to setup the project(based on create-react-app).
+* Achieve 'Write once use everywhere' with react-native(though react strictly says 'Learn once use anywhere').
 ---
 
-## How it works
+## How it works:
 This starter kit has different branches based on what general requirements are(more branches coming soon). Just clone the project, switch to the desired branch, remove the .git folder and you are all set to code your app without thinking of any requirements or pre/post-tasks that need to be taken care of.  
+<br/>
+###Selecting the right branch:
+ - <b>master</b> : As the name says, it is and it'll always be the combination of all other branches, targeting all the possible platforms.
+ - <b>web</b> : If you are want a simple app(like a blog or something) and want it on android, iOS and web. This branch is what you need.
+ - <b>web-redux</b> :If you wan to utilize the power of redux(i.e. you want to have complete control over your app's state, don't want your app to be highly complex), this is what you are looking for.<br/>
+ P.S.: As of now master and web-redux are at exact same stage.
+ 
 
 ---
 
-##Wiring Up
+##Wiring Up:
 ```
 git clone https://yourGithubUsername@github.com/amoghbanta/reactNativeEverywhere.git yourProjectName
 cd yourProjectName
@@ -22,7 +29,7 @@ npm i
 ```
 ---
 
-##Run you project
+##Run the project:
 ####Pre-requisites:
 Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-started/installing-node))<br/>
 react-native CLI (`npm install -g react-native-cli`)
@@ -52,5 +59,5 @@ react-native CLI (`npm install -g react-native-cli`)
 - [ ] improve webpack config for web <br/>
 
 ---
-##Contributing
+##Contributing:
 This starter kit is still in very early stage. All your suggestions and PRs and welcome.
