@@ -1,7 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
-var NODE_ENV = process.env.NODE_ENV;
-var ROOT_PATH = path.resolve(__dirname);
+let NODE_ENV = process.env.NODE_ENV;
+let ROOT_PATH = path.resolve(__dirname);
+
 
 export default {
     devtool: 'source-map',
