@@ -5,6 +5,7 @@ This project  is an attempt to:
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project(based on create-react-app).
 * Achieve 'Write once use everywhere' with react-native(though react strictly says 'Learn once use anywhere').
+
 ---
 
 ## How it works:
