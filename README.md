@@ -10,12 +10,11 @@ This project  is an attempt to:
 
 ## How it works:
 This starter kit has different branches based on what general requirements are(more branches coming soon). Just clone the project, switch to the desired branch, remove the .git folder and you are all set to code your app without thinking of any requirements or pre/post-tasks that need to be taken care of.  
-<br/>
 ###Selecting the right branch:
  - <b>master</b> : As the name says, it is and it'll always be the combination of all other branches, targeting all the possible platforms.
  - <b>web</b> : If you are want a simple app(like a blog or something) and want it on android, iOS and web. This branch is what you need.
  - <b>web-redux</b> :If you wan to utilize the power of redux(i.e. you want to have complete control over your app's state, don't want your app to be highly complex), this is what you are looking for.<br/>
- P.S.: As of now master and web-redux are at exact same stage.
+<b> P.S.</b> : As of now master and web-redux are at exact same stage.
  
 
 ---
