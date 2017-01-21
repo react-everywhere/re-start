@@ -2,7 +2,7 @@
 
 [![woue.jpg](https://s28.postimg.org/pwoavwifx/woue.jpg)](https://postimg.org/image/p75ijjhw9/)
 
-This project  is an attempt to: 
+#####This project  is an attempt to: 
 * Target multiple platforms(Android, iOS, web, windows and macOS) with react native' APIs.
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project(based on create-react-app).
@@ -14,7 +14,7 @@ This project  is an attempt to:
 This starter kit has different branches based on what general requirements are(more branches coming soon). Just clone the project, switch to the desired branch, remove the .git folder and you are all set to code your app without thinking of any requirements or pre/post-tasks that need to be taken care of.  
 ###Selecting the right branch:
  - <b>master</b> : As the name says, it is and it'll always be the combination of all other branches, targeting all the possible platforms.
- - <b>web</b> : If you are want a simple app(like a blog or something) and want it on android, iOS and web. This branch is what you need.
+ - <b>web</b> : If you are want a simple app(authenticating your users, displaying some data from remote sources and some process which is not very complex) and want it on android, iOS and web. This branch is what you need.
  - <b>web-redux</b> :If you wan to utilize the power of redux(i.e. you want to have complete control over your app's state and  don't want your app to be complex), this is what you are looking for.<br/>
 <b> P.S.</b> : As of now master and web-redux are at exact same stage.
  
