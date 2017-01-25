@@ -1,8 +1,12 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
-  "plugins": ["react-native"],
+  "env": {
+    "browser": true
+  },
+  "plugins": ["react-native", "compat"],
   "rules": {
+    "compat/compat": 2,
     "react/jsx-filename-extension": 0
   }
 }
