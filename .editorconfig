@@ -8,10 +8,6 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.js]
-charset = utf-8
+[*.{json,js,jsx,html,css}]
 indent_style = space
 indent_size = 4
-end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
