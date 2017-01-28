@@ -7,6 +7,7 @@
   "plugins": ["react-native", "compat"],
   "rules": {
     "compat/compat": 2,
+    "indent": ["error", 4],
     "react/jsx-filename-extension": 0
   }
 }
