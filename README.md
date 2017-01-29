@@ -53,7 +53,13 @@ react-native CLI (`npm install -g react-native-cli`)
 `npm run build` (this will build your production ready bundle)
 
 -------
+###Some very useful cross platform compatible libraries:
+- [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
+- [axios](https://github.com/mzabriskie/axios)
+- [react-navigation](https://github.com/react-community/react-navigation) (might be included in ReactNativeEverywhere soon)
 
+
+-------
 ###TODO:
 - [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))<br/>
 - [ ] support for macOS([react-native-macOS](https://github.com/ptmt/react-native-macos))<br/>
