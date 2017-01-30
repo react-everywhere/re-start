@@ -237,11 +237,8 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
-
-
 ### Bower ###
 bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
-

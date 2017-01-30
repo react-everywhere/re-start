@@ -1,8 +1,5 @@
-const path = require('path')
-const webpack = require('webpack')
-let NODE_ENV = process.env.NODE_ENV;
-let ROOT_PATH = path.resolve(__dirname);
-
+import path from 'path';
+import webpack from 'webpack';
 
 export default {
     devtool: 'source-map',
@@ -11,12 +8,12 @@ export default {
         main: './index.web.js',
     },
     node: {
-        __dirname: true
+        __dirname: true,
     },
     output: {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js',
-        publicPath: '/public/'
+        publicPath: '/public/',
     },
     resolve: {
         alias: {
@@ -29,14 +26,14 @@ export default {
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             compress: {
-                warnings: false
-            }
+                warnings: false,
+            },
         }),
         new webpack.DefinePlugin({
             'process.env': {
-                'NODE_ENV': JSON.stringify('production')
-            }
-        })
+                NODE_ENV: JSON.stringify('production'),
+            },
+        }),
     ],
 
     module: {
@@ -44,7 +41,7 @@ export default {
             {
                 test: /\.scss?$/,
                 loader: 'style!css!sass',
-                include: path.join(__dirname, 'src', 'styles')
+                include: path.join(__dirname, 'src', 'styles'),
             },
             {
                 test: /\.js?$/,
@@ -57,12 +54,12 @@ export default {
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader'
+                loader: 'style-loader!css-loader',
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loader: "file-loader"
+                loader: 'file-loader',
             },
-        ]
-    }
-}
+        ],
+    },
+};
