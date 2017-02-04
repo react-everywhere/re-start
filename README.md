@@ -23,7 +23,7 @@ This starter kit has different branches based on what general requirements are(m
 
 ##Wiring Up:
 ```
-git clone https://yourGithubUsername@github.com/amoghbanta/reactNativeEverywhere.git yourProjectName
+git clone https://github.com/amoghbanta/reactNativeEverywhere.git yourProjectName
 cd yourProjectName
 git checkout theBranchYouNeed
 rm -rf .git
@@ -69,11 +69,11 @@ react-native CLI (`npm install -g react-native-cli`)
 
 ---
 ###Running on Web, Android and iOS:
-<div style="display: flex; align-items: center; justify-content: space-between;">
-<img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" width="250">
-<img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" width="250">
-<img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" width="250">
-</div>
+<p align="center">
+<img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450">
+<img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" height="450">
+<img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" height="450">
+</p>
 ---
 ##Contributing:
 This starter kit is still in very early stage. All your suggestions and PRs and welcome.
