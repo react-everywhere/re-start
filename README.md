@@ -1,6 +1,6 @@
 # ReactNativeEverywhere :globe_with_meridians: :iphone: :computer:
 
-[![woue.jpg](https://s28.postimg.org/pwoavwifx/woue.jpg)](https://postimg.org/image/p75ijjhw9/)
+![woue.jpg](https://s28.postimg.org/pwoavwifx/woue.jpg)
 
 #####This project  is an attempt to: 
 * Target multiple platforms(Android, iOS, web, windows and macOS) with react native' APIs.
@@ -66,6 +66,10 @@ react-native CLI (`npm install -g react-native-cli`)
 - [ ] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
 - [ ] improve webpack config and add media queries for web <br/>
 - [ ] Add example projects for each branch<br/>
+
+---
+###RUNNING this kit on Web, Android and iOS:
+![Web](https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif)      ![Android](https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif)      ![iOS](https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif)
 
 ---
 ##Contributing:
