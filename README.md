@@ -69,11 +69,11 @@ react-native CLI (`npm install -g react-native-cli`)
 
 ---
 ###Running on Web, Android and iOS:
-<p style="display: flex; align-items: center; justify-content: space-between;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
 <img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" width="250">
 <img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" width="250">
 <img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" width="250">
-</p>
+</div>
 ---
 ##Contributing:
 This starter kit is still in very early stage. All your suggestions and PRs and welcome.
