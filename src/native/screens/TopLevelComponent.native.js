@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
-import  SampleAction from '../../common/actions/SampleAction'
+import  SampleAction from '../../common/actions/SampleAction';
+import TopLevelScreenComponent from '../../common/components/TopLevelScreenComponent'
 import {
     StyleSheet,
     Text,
@@ -30,42 +31,15 @@ class TopLevelComponentNative extends React.Component {
 
     }
 
-    componentDidMount() {
-
-    }
-
-    componentWillReceiveProps() {
-
-    }
-
     render() {
 
         return (
             <View style={styles.container}>
-                <Text style={styles.biggerText}>
-                    {this.state.message}
-                </Text>
-
-                <View style={styles.row}>
-                    <Text style={styles.text}>
-                        {this.state.dispatchMessage}
-                    </Text>
-                    <View style={styles.button}>
-                        <Button
-                            title={"Pass"}
-                            onPress={this.passDispatchedAction}
-                        />
-                    </View>
-                    <View style={styles.button}>
-                        <Button
-                            title={"Fail"}
-                            onPress={this.failDispatchedAction}
-                        />
-                    </View>
-                </View>
-                <Text style={styles.biggerText}>
-                    {this.props.sampleReducer.message}
-                </Text>
+                <TopLevelScreenComponent
+                    passDispatchedAction={this.passDispatchedAction}
+                    failDispatchedAction={this.failDispatchedAction}
+                    message={this.props.sampleReducer.message}
+                />
             </View>
         );
     }
@@ -85,7 +59,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     biggerText: {
-        fontSize:17
+        fontSize: 17
     },
     button: {
         margin: 5
