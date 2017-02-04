@@ -68,8 +68,8 @@ react-native CLI (`npm install -g react-native-cli`)
 - [ ] Add example projects for each branch<br/>
 
 ---
-###RUNNING this kit on Web, Android and iOS:
-![Web](https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif)      ![Android](https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif)      ![iOS](https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif)
+###Running on Web, Android and iOS:
+<img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" width="250"><img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" width="250"><img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" width="250">
 
 ---
 ##Contributing:
