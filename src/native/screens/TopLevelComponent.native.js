@@ -51,18 +51,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
-    },
-    row: {
-        flexDirection: 'row',
-        margin: 5,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    biggerText: {
-        fontSize: 17
-    },
-    button: {
-        margin: 5
     }
 });
 
