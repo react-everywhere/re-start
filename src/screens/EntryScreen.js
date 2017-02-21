@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
-import  SampleAction from '../../common/actions/SampleAction';
-import TopLevelScreenComponent from '../../common/components/TopLevelScreenComponent'
+import  SampleAction from './../actions/SampleAction';
+import TopLevelScreenComponent from './../components/TopLevelScreenComponent'
 import {
     StyleSheet,
     Text,
