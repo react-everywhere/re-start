@@ -75,10 +75,12 @@ react-native CLI (`npm install -g react-native-cli`)
 ---
 ###Running on Web, Android, iOS and Windows(Universal):
 <p align="center">
-<img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450">
-<img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" height="450">
-<img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" height="450">
-<img src="https://s21.postimg.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450">
+<img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450"  width="260">
+<img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" height="450"  width="260">
+</p>
+<p align="center">
+<img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" height="450"  width="260">
+<img src="https://s21.postimg.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450"  width="260">
 </p>
 
 ---
