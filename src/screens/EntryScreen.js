@@ -12,7 +12,7 @@ import {
 
 let {height, width} = Dimensions.get('window');
 
-class TopLevelComponentWeb extends React.Component {
+class EntryScreen extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
@@ -74,5 +74,5 @@ function mapStateToProps(state) {
     )
 }
 
-export default connect(mapStateToProps)(TopLevelComponentWeb);
+export default connect(mapStateToProps)(EntryScreen);
 
