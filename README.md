@@ -2,7 +2,7 @@
 
 ![woue.jpg](https://s28.postimg.org/pwoavwifx/woue.jpg)
 
-#####This project  is an attempt to: 
+##### This project  is an attempt to: 
 * Target multiple platforms(Android, iOS, web, windows and macOS) with react native' APIs.
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project(based on create-react-app).
