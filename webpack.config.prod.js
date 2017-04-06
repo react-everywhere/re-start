@@ -1,7 +1,5 @@
-const path = require('path')
-const webpack = require('webpack')
-let NODE_ENV = process.env.NODE_ENV;
-let ROOT_PATH = path.resolve(__dirname);
+const path = require('path');
+const webpack = require('webpack');
 
 
 export default {

@@ -1,8 +1,4 @@
 var path = require('path');
-var webpack = require('webpack');
-
-var NODE_ENV = process.env.NODE_ENV;
-var ROOT_PATH = path.resolve(__dirname);
 
 module.exports = {
     entry: {
