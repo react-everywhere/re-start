@@ -4,13 +4,8 @@ import  SampleAction from './../actions/SampleAction';
 import TopLevelScreenComponent from './../components/TopLevelScreenComponent'
 import {
     StyleSheet,
-    Text,
     View,
-    Dimensions,
-    Button
 } from 'react-native';
-
-let {height, width} = Dimensions.get('window');
 
 class EntryScreen extends React.Component {
     constructor(props, context) {
@@ -58,8 +53,8 @@ class EntryScreen extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: width,
-        height: height,
+        width: '100%',
+        height: '100%',
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
