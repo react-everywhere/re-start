@@ -9,21 +9,20 @@
     "build": "babel-node tools/build.js"
   },
   "dependencies": {
-    "file-loader": "^0.9.0",
+    "file-loader": "^0.11.1",
     "react": "^16.0.0-alpha.6",
-    "react-dom": "^15.3.2",
     "react-native": "^0.43.1",
-    "react-native-web": "0.0.65",
-    "react-native-windows": "^0.41.0-rc.1",
-    "react-redux": "^5.0.2",
-    "react-router": "^3.0.0",
-    "react-router-native": "^2.0.0-beta.0",
+    "react-native-web": "0.0.81",
+    "react-native-windows": "^0.43.0-rc.0",
+    "react-redux": "^5.0.3",
+    "react-router": "^4.0.0",
+    "react-router-native": "^4.0.0",
     "react-router-redux": "^4.0.8",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "babel-jest": "18.0.0",
+    "babel-jest": "19.0.0",
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-polyfill": "^6.20.0",
@@ -32,12 +31,12 @@
     "babel-preset-react-native": "1.9.1",
     "babel-preset-stage-0": "^6.16.0",
     "babel-runtime": "^6.20.0",
-    "jest": "18.0.0",
+    "jest": "19.0.2",
     "react-test-renderer": "^15.4.2",
     "rnpm-plugin-windows": "^0.2.4",
     "url-loader": "^0.5.7",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
   },
   "jest": {
     "preset": "react-native",
