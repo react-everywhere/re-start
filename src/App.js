@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Provider} from "react-redux";
 import store from "./utilities/storage/store";
 import TopLevelComponent from './screens/EntryScreen';
