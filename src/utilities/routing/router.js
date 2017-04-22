@@ -1,9 +1,9 @@
 import {Platform} from 'react-native';
 
-const RouterPackage = (Platform.OS === 'web') ? require('react-router') : require('react-router-native');
+const RouterPackage = (Platform.OS === 'web') ? require('react-router-dom') : require('react-router-native');
 
 /*
- * Platform specific exports :/
+ * Remove Platform specific exports :/
  * */
-export const {Router, Route} = RouterPackage;
-export const history = (Platform.OS === 'web') ? RouterPackage.browserHistory : RouterPackage.nativeHistory;
+export const {Link, Route, Redirect} = RouterPackage;
+export const Router = (Platform.OS === 'web') ? RouterPackage.BrowserRouter : RouterPackage.NativeRouter;

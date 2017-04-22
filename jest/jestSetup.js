@@ -6,4 +6,4 @@ jest.mock('Linking', () => {
         canOpenURL: jest.fn(),
         getInitialURL: jest.fn(),
     }
-})
+});

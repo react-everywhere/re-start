@@ -4,12 +4,10 @@ import {
 } from 'react-native';
 import App from './src/App'
 
+
 export default class reactNativeEverywhere extends Component {
     render() {
-        return (
-            <App/>
-        );
+        return  <App/>;
     }
 }
-
 AppRegistry.registerComponent('reactNativeEverywhere', () => reactNativeEverywhere);

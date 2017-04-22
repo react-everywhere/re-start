@@ -1,5 +1,5 @@
 import React from 'react';
-import App from './src/App'
 import ReactNative from 'react-native'
+import App from './src/App'
 
-ReactNative.render(<App />, document.getElementById('react-native-everywhere'));
+ReactNative.render(<App/>, document.getElementById('root'));

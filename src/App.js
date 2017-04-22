@@ -2,18 +2,16 @@ import React from 'react';
 import {Provider} from "react-redux";
 import store from "./utilities/storage/store";
 import TopLevelComponent from './screens/EntryScreen';
-import {Router, Route, history} from './utilities/routing/router';
-import {syncHistoryWithStore} from 'react-router-redux';
+import Routing, {Router} from './utilities/routing';
 
-// Create an enhanced history that syncs navigation events with the store
-const enhancedHistory = syncHistoryWithStore(history, store);
+const Route = Routing.Route;
 
 
 class App extends React.Component {
     render() {
         return (
             <Provider store={store}>
-                <Router history={enhancedHistory}>
+                <Router>
                     <Route path='/' component={TopLevelComponent}/>
                 </Router>
             </Provider>
