@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 
 module.exports = {
     entry: {
@@ -13,8 +13,8 @@ module.exports = {
 
             {
                 test: /\.js?$/,
-                exclude: /node_modules/,
-                loader: 'babel',
+                exclude: /node_modules\/(?!(react-router-native)\/).*/,
+                loader: 'babel-loader',
                 query: {
                     plugins: ['transform-runtime'],
                     presets:  ['es2015', 'stage-0', 'react'],
