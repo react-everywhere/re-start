@@ -3,6 +3,8 @@ const webpack = require('webpack');
 let NODE_ENV = process.env.NODE_ENV;
 let ROOT_PATH = path.resolve(__dirname);
 
+console.log(ROOT_PATH);
+
 export default {
     devtool: 'source-map',
 
@@ -48,7 +50,7 @@ export default {
             {
                 test: /\.js?$/,
                 exclude: /node_modules/,
-                loader: 'babel',
+                loader: 'babel-loader',
                 query: {
                     plugins: ['transform-runtime'],
                     presets: ['es2015', 'stage-0', 'react'],
