@@ -1,0 +1,4 @@
+{
+  "web": "node web/scripts/start.js",
+  "build": "node web/scripts/build.js"
+}
