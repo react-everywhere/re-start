@@ -44,6 +44,7 @@ function addAdditionalScripts() {
     const scripts = JSON.parse(fs.readFileSync(scriptsJsonPath));
     for (const script in scripts) {
         const scriptCommand = scripts[script];
+        debugger;
 
     }
 
@@ -51,7 +52,7 @@ function addAdditionalScripts() {
 }
 
 installDevDependencies();
-// addAdditionalScripts();
+addAdditionalScripts();
 
 //TODO: complete function to add web scripts to package.json scripts object from scripts.json
 //TODO: add function to replace project name in index.*.js files
