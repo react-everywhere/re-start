@@ -8,7 +8,15 @@
 * Cut out the time and effort it takes to setup the project(based on create-react-app).
 * Achieve 'Write once use everywhere' with react-native(though react strictly says 'Learn once use anywhere').
 
----
+----
+
+## Note (Current status): 
+Good news is that react-native-cli now supports [templates](https://github.com/facebook/react-native/pull/12548). So, it makes makes much more sense if this project is a react-native-template, which will remove the need to update this project with every majore release of react-native. It is WIP on template branch and will be production ready in a couple of weeks. It just works as of now (on android, iOS and Web, need to test in on windows). So, no more git cloning. All you have to do is:
+```
+react-native init <Your Project Name> --template everywhere
+```
+
+---- 
 
 ## How it works:
 This starter kit has different branches based on what general requirements are(more branches coming soon). Just clone the project, switch to the desired branch, remove the .git folder and you are all set to code your app without thinking of any requirements or pre/post-tasks that need to be taken care of.  
