@@ -1,6 +1,5 @@
 {
   "presets": [
-    "react-native",
-    "react-app"
+    "react-native"
   ]
 }
