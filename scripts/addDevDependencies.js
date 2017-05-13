@@ -38,6 +38,8 @@ function installDevDependencies() {
             execSync(`npm install ${depToInstall} --save`);
         }
     }
+    console.log("Deleting devDependencies.json...");
+    execSync(`rm  ${devDependenciesJsonPath}`);
 }
 
 function addAdditionalScripts() {
@@ -51,17 +53,6 @@ function addAdditionalScripts() {
     console.log(`Adding scripts for web to package.json`);
 }
 
-
-function deleteExtraFiles() {
-    const devDependenciesJsonPath = path.resolve('devDependencies.json');
-    console.log("devDependenciesJsonPath is", devDependenciesJsonPath);
-    debugger;
-
-    execSync(`rm  ${devDependenciesJsonPath}`);
-
-}
-
 installDevDependencies();
 addAdditionalScripts();
-deleteExtraFiles();
 
