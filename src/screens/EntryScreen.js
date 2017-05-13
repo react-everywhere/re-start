@@ -29,14 +29,6 @@ class EntryScreen extends React.Component {
 
     }
 
-    componentDidMount() {
-
-    }
-
-    componentWillReceiveProps() {
-
-    }
-
     render() {
 
         return (
