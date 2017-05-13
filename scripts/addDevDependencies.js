@@ -41,18 +41,27 @@ function installDevDependencies() {
 }
 
 function addAdditionalScripts() {
-    const fileName = "../package.json";
-    const packageFile = require(fileName);
-    packageFile.repository.web = "node scripts/start.js";
-    packageFile.repository.build = "node scripts/build.js";
+    const fileName = "package.json";
+    const packageFile = path.resolve(fileName);
+    let file = require(packageFile);
+    //these are the scripts that will be added to package.json
+    file.scripts['web'] = "node scripts/start.js";
+    file.scripts["build"] = "node scripts/build.js";
+    fs.writeFileSync(fileName, JSON.stringify(file));
+    console.log(`Adding scripts for web to package.json`);
+}
 
-    fs.writeFileSync(fileName, JSON.stringify(packageFile));
 
+function deleteExtraFiles() {
+    const devDependenciesJsonPath = path.resolve('devDependencies.json');
+    console.log("devDependenciesJsonPath is", devDependenciesJsonPath);
+    debugger;
+
+    execSync(`rm  ${devDependenciesJsonPath}`);
 
 }
 
 installDevDependencies();
 addAdditionalScripts();
+deleteExtraFiles();
 
-//TODO: complete function to add web scripts to package.json scripts object from scripts.json
-//TODO: add function to replace project name in index.*.js files
