@@ -39,14 +39,12 @@ function installDevDependencies() {
 }
 
 function addAdditionalScripts() {
-    console.log('Adding scripts for web to the project...');
-    const scriptsJsonPath = path.resolve('devDependencies.json');
-    const scripts = JSON.parse(fs.readFileSync(scriptsJsonPath));
-    for (const script in scripts) {
-        const scriptCommand = scripts[script];
-        debugger;
+    const fileName = "../package.json";
+    const packageFile = require(fileName);
+    packageFile.repository.web = "node scripts/start.js";
+    packageFile.repository.build = "node scripts/build.js";
 
-    }
+    fs.writeFileSync(fileName, JSON.stringify(packageFile));
 
 
 }
