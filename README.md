@@ -14,7 +14,9 @@
 Good news is that react-native-cli now supports [templates](https://github.com/facebook/react-native/pull/12548). So, it makes makes much more sense if this project is a react-native-template, which will remove the need to update this project with every majore release of react-native. It is WIP on template branch and will be production ready in a couple of weeks. It just works as of now (on android, iOS and Web, need to test in on windows). So, no more git cloning. All you have to do is:
 ```
 react-native init <Your Project Name> --template everywhere
+node scripts/addDevDependencies.js
 ```
+
 
 ---- 
 
