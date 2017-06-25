@@ -1,9 +1,10 @@
-# ReactNativeEverywhere :globe_with_meridians: :iphone: :computer:
+# re-start :globe_with_meridians: :iphone: :computer:
 
 [![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
 
-##Current status: 
+## Current status: 
+react-native-everywhere is now re-start (where re stands for react-everywhere).
 Good news is that react-native-cli now supports [templates](https://github.com/facebook/react-native/pull/12548).
 So, it makes makes much more sense if this project is a react-native-template, 
 which will remove the need to update this project with every major release of react-native.
@@ -11,7 +12,7 @@ It just works as of now on all the platforms.
 So, no more git cloning.
 
  
-##Usage 
+## Usage 
 
 #### Pre-requisites:
 Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-started/installing-node))<br/>
@@ -84,6 +85,3 @@ Note: If the above script fails due to some reason, you can do it manually by co
 <img src="https://s21.postimg.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450"  width="260">
 </p>
 
----
-## Contributing:
-This starter kit is still in very early stage. All your suggestions and PRs and welcome.
