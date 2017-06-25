@@ -1,10 +1,10 @@
 {
   "name": "react-native-template-everywhere",
-  "version": "0.2.9",
+  "version": "0.3.1",
   "description": "react-native template to target multiple platforms.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amoghbanta/react-native-everywhere.git"
+    "url": "git@github.com:react-everywhere/re-start.git"
   },
   "keywords": [
     "react",
@@ -19,7 +19,7 @@
   "author": "Amogh Banta",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/amoghbanta/react-native-everywhere/issues"
+    "url": "https://github.com/react-everywhere/re-start"
   },
-  "homepage": "https://github.com/amoghbanta/react-native-everywhere#readme"
+  "homepage": "https://github.com/react-everywhere/re-start/issues"
 }
