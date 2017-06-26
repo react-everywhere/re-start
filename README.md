@@ -1,5 +1,7 @@
 # re-start :globe_with_meridians: :iphone: :computer:
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/react-everywhere/re-start.svg)](https://greenkeeper.io/)
+
 [![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
 
