@@ -42,17 +42,21 @@ function installDevDependencies() {
     execSync(`rm  ${devDependenciesJsonPath}`);
 }
 
-function addAdditionalScripts() {
+function updatePackageJson() {
     const fileName = "package.json";
     const packageFile = path.resolve(fileName);
     let file = require(packageFile);
     //these are the scripts that will be added to package.json
+    console.log(`Adding scripts for web to package.json`);
     file.scripts['web'] = "node scripts/start.js";
     file.scripts["build"] = "node scripts/build.js";
+    file.scripts["electron"] = "electron .";
+    console.log(`Adding entry point for electron`);
+    file['main'] = "index.electron.js";
     fs.writeFileSync(fileName, JSON.stringify(file));
-    console.log(`Adding scripts for web to package.json`);
 }
 
+
 installDevDependencies();
-addAdditionalScripts();
+updatePackageJson();
 
