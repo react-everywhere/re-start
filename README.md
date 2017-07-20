@@ -6,6 +6,13 @@
 [![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
 
+## This project  is an attempt to: 
+* Target multiple platforms (Android, iOS, web, windows(UWP), osX(native) and ionic(osX, Ubuntu and Windows)) with react native' APIs and a single codebase.
+* Follow best practices while doing the above.
+* Cut out the time and effort it takes to setup the project (based on create-react-app).
+* Achieve 'Write once use everywhere' with react-native (though react strictly says 'Learn once use anywhere').
+
+
 ## Current status: 
 react-native-everywhere is now re-start (where re stands for react-everywhere).
 Good news is that react-native-cli now supports [templates](https://github.com/facebook/react-native/pull/12548).
@@ -24,19 +31,22 @@ react-native CLI (`npm install -g react-native-cli`)
 All you have to do is:
 - Create a new react-native project using react-native-cli and specify this project as a template:
 ```
-react-native init <Your Project Name> --template everywhere
+react-native init <Your Project Name> --template everywhere --version="0.44.2"
 ```
 - Since react-native-template does'nt support adding dev dependencies and custom scripts to package.json,
  so I have created a custom script to do that.
 ```
 node scripts/addDevDependencies.js
 ```
-Note: If the above script fails due to some reason, you can do it manually by copying the contents
+##### Notes:
+ - If the above script fails due to some reason, you can do it manually by copying the contents
  of devDependencies.json to your package.json's devDependencies object and adding following to the scripts object.
  ```
 "web": "node scripts/start.js",
 "build": "node scripts/build.js"
 ```
+- react-native-web currently (20th of July, 2017) supports React/ReactDOM 15.4, 15.5, or 15.6, so make sure you do not upgrade if you want support for web.
+- make sure that the version of react-native-windows is same as your react-native version, if you are targeting windows support.
 
 ---
 
@@ -74,8 +84,8 @@ Note: If the above script fails due to some reason, you can do it manually by co
 ### Progress:
 - [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))<br/>
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
-- [x] Add example projects for each branch<br/>
-- [ ] Add media queries for web <br/>
+- [ ] Support for electron<br/>
+- [ ] Support for react-native-macOS<br/>
 
 ---
 ### Running demo on Web, Android, iOS and Windows(Universal):
