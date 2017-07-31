@@ -26,17 +26,20 @@ function installDevDependencies() {
 
     const devDependenciesJsonPath = path.resolve('devDependencies.json');
     const devDependencies = JSON.parse(fs.readFileSync(devDependenciesJsonPath));
+    let depsToInstall = [];
 
     for (const depName in devDependencies) {
         const depVersion = devDependencies[depName];
         const depToInstall = `${depName}@${depVersion}`;
-        console.log(`Adding ${depToInstall}...`);
+        depsToInstall.push(depToInstall);
+    }
 
-        if (getYarnVersionIfAvailable()) {
-            execSync(`yarn add ${depToInstall} -D`, {stdio: 'inherit'});
-        } else {
-            execSync(`npm install ${depToInstall} --save`);
-        }
+    depsToInstall = depsToInstall.join(' ');
+    console.log(`Adding ${depsToInstall}...`);
+    if (getYarnVersionIfAvailable()) {
+        execSync(`yarn add ${depsToInstall} -D`, {stdio: 'inherit'});
+    } else {
+        execSync(`npm install ${depsToInstall} --save`);
     }
     console.log("Deleting devDependencies.json...");
     execSync(`rm  ${devDependenciesJsonPath}`);
