@@ -98,5 +98,6 @@ node scripts/addDevDependencies.js
 <img src="https://s21.postimg.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450"  width="260">
 </p>
 
-
+---
+### Sponsors:
 <a href="https://app.codesponsor.io/link/g9WG5v9uRpry3gN6dc79ooYV/react-everywhere/re-start" rel="nofollow"><img src="https://app.codesponsor.io/embed/g9WG5v9uRpry3gN6dc79ooYV/react-everywhere/re-start.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
