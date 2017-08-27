@@ -53,7 +53,7 @@ function updatePackageJson() {
     console.log(`Adding scripts for web to package.json`);
     file.scripts['web'] = "node scripts/start.js";
     file.scripts["build"] = "node scripts/build.js";
-    file.scripts["electron"] = "electron .";
+    file.scripts["electron"] = "node scripts/start.js & electron .";
     console.log(`Adding entry point for electron`);
     file['main'] = "index.electron.js";
     fs.writeFileSync(fileName, JSON.stringify(file));
