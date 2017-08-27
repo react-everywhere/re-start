@@ -65,6 +65,9 @@ node scripts/addDevDependencies.js
 `react-native windows`
 `react-native run-windows`
 
+#### Desktop (Electron)
+`npm/yarn run electron`
+
 ### Build for production:
 #### Android/iOS
 [This will help](https://facebook.github.io/react-native/docs/running-on-device.html)
@@ -84,7 +87,7 @@ node scripts/addDevDependencies.js
 ### Progress:
 - [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))<br/>
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
-- [ ] Support for electron<br/>
+- [x] Support for electron <br/>
 - [ ] Support for react-native-macOS<br/>
 
 ---
@@ -92,12 +95,9 @@ node scripts/addDevDependencies.js
 <p align="center">
 <img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450"  width="260">
 <img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" height="450"  width="260">
+<img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" height="450"  width="260">
 </p>
 <p align="center">
-<img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" height="450"  width="260">
 <img src="https://s21.postimg.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450"  width="260">
+<img src="https://s2.postimg.org/edxytckih/ezgif.com-video-to-gif.gif" height="450"  width="350">
 </p>
-
----
-### Sponsors:
-<a href="https://app.codesponsor.io/link/g9WG5v9uRpry3gN6dc79ooYV/react-everywhere/re-start" rel="nofollow"><img src="https://app.codesponsor.io/embed/g9WG5v9uRpry3gN6dc79ooYV/react-everywhere/re-start.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
