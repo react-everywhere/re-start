@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-native-template-everywhere.svg)](https://badge.fury.io/js/react-native-template-everywhere)
 [![Greenkeeper badge](https://badges.greenkeeper.io/react-everywhere/re-start.svg)](https://greenkeeper.io/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 [![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
@@ -88,10 +89,11 @@ node scripts/addDevDependencies.js
 - [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))<br/>
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
 - [x] Support for electron <br/>
+- [ ] Compatibility with React 16 <br/>
 - [ ] Support for react-native-macOS<br/>
 
 ---
-### Running demo on Web, Android, iOS and Windows(Universal):
+### Running demo on Web, Android, iOS, Windows(Universal) and Electron:
 <p align="center">
 <img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450"  width="260">
 <img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" height="450"  width="260">
@@ -101,3 +103,8 @@ node scripts/addDevDependencies.js
 <img src="https://s21.postimg.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450"  width="260">
 <img src="https://s2.postimg.org/edxytckih/ezgif.com-video-to-gif.gif" height="450"  width="350">
 </p>
+
+------
+### LICENSE
+
+GNU GENERAL PUBLIC LICENSE
