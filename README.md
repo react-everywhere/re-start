@@ -8,14 +8,14 @@
 
 
 ## This project  is an attempt to: 
-* Target multiple platforms (Android, iOS, web, windows(UWP), osX(native) and ionic(osX, Ubuntu and Windows)) with react native' APIs and a single codebase.
+* Target multiple platforms (Android, iOS, web, windows(UWP), osX(react-native-macOS) and Elctron(osX, Ubuntu and Windows)) with react native' APIs and a single codebase.
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project (based on create-react-app).
 * Achieve 'Write once use everywhere' with react-native (though react strictly says 'Learn once use anywhere').
 
 
 ## Current status: 
-react-native-everywhere is now re-start (where re stands for react-everywhere).
+What used to be react-native-everywhere before is now re-start (where re stands for react-everywhere).
 Good news is that react-native-cli now supports [templates](https://github.com/facebook/react-native/pull/12548).
 So, it makes makes much more sense if this project is a react-native-template, 
 which will remove the need to update this project with every major release of react-native.
