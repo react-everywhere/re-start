@@ -8,7 +8,7 @@
 
 
 ## This project  is an attempt to: 
-* Target multiple platforms (Android, iOS, Web, Windows[UWP], macOS[react-native-macOS] and Electron[macOS, Ubuntu, Windows]) with react native' APIs and a single codebase.
+* Target multiple platforms (Android, iOS, Web, Windows[UWP] and Electron[macOS, Ubuntu, Windows]) with react native' APIs and a single codebase.
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project (based on create-react-app).
 * Achieve 'Write once use everywhere' with react-native (though react strictly says 'Learn once use anywhere').
