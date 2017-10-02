@@ -17,6 +17,9 @@
     "native"
   ],
   "author": "Amogh Banta",
+  "contributors": [
+    "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>"
+  ],
   "license": "GPL",
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
