@@ -22,7 +22,7 @@ class TopLevelScreenComponent extends React.Component {
     render() {
 
         return (
-            <View>
+            <View style={styles.container}>
                 <Text style={styles.biggerText}>
                     {this.state.message}
                 </Text>
@@ -55,6 +55,9 @@ class TopLevelScreenComponent extends React.Component {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1
+    },
     row: {
         flexDirection: 'row',
         margin: 5,

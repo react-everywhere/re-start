@@ -1,13 +1,11 @@
 {
-  "react": "^15.6.1",
-  "react-dom": "^15.6.1",
-  "react-native": "0.45.1",
-  "react-native-web": "0.0.104",
-  "react-native-windows": "^0.44.0-rc.3",
-  "react-redux": "^5.0.3",
-  "react-router": "4.0.0",
-  "react-router-dom": "4.0.0",
-  "react-router-native": "4.0.0",
-  "redux": "^3.6.0",
-  "redux-thunk": "^2.2.0"
+  "react": "^16.0.0",
+  "react-dom": "^16.0.0",
+  "react-native-web": "^0.1.12",
+  "react-redux": "5.0.6",
+  "react-router": "4.2.0",
+  "react-router-dom": "4.2.2",
+  "react-router-native": "4.2.0",
+  "redux": "3.7.2",
+  "redux-thunk": "2.2.0"
 }
