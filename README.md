@@ -7,7 +7,7 @@
 [![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
 
-## This project  is an attempt to: 
+## This project is an attempt to: 
 * Target multiple platforms (Android, iOS, Web, Windows[UWP] and Electron[macOS, Ubuntu, Windows]) with react native' APIs and a single codebase.
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project (based on create-react-app).
@@ -25,7 +25,7 @@ So, no more git cloning.
  
 ## Usage 
 
-#### Pre-requisites:
+### Pre-requisites:
 Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-started/installing-node))<br/>
 react-native CLI (`npm install -g react-native-cli`)
 
@@ -39,7 +39,7 @@ react-native init <Your Project Name> --template everywhere --version="0.44.2"
 ```
 node scripts/addDevDependencies.js
 ```
-##### Notes:
+#### Notes:
  - If the above script fails due to some reason, you can do it manually by copying the contents
  of devDependencies.json to your package.json's devDependencies object and adding following to the scripts object.
  ```
@@ -53,31 +53,31 @@ node scripts/addDevDependencies.js
 
 ## Run the project on a specific platform:
 
-#### Android
+### Android
 `react-native run-android`
 
-#### iOS
+### iOS
 `react-native run-ios`
 
-#### Web
+### Web
 `npm/yarn run web`
 
-#### Windows
+### Windows
 `react-native windows`
 `react-native run-windows`
 
-#### Desktop (Electron)
+### Desktop (Electron)
 `npm/yarn run electron`
 
-### Build for production:
-#### Android/iOS
+## Build for production:
+### Android/iOS
 [This will help](https://facebook.github.io/react-native/docs/running-on-device.html)
 
-#### Web
+### Web
 `npm/yarn run build` (this will build your production ready bundle)
 
 -------
-### Some very useful cross platform compatible libraries:
+## Some very useful cross platform compatible libraries:
 - [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 - [re-render](https://github.com/amoghbanta/re-render) (this is experimental and a WIP)
 - [axios](https://github.com/mzabriskie/axios)
@@ -85,7 +85,7 @@ node scripts/addDevDependencies.js
 
 
 -------
-### Progress:
+## Progress:
 - [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))<br/>
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
 - [x] Support for electron <br/>
@@ -93,7 +93,7 @@ node scripts/addDevDependencies.js
 - [ ] Support for react-native-macOS<br/>
 
 ---
-### Running demo on Web, Android, iOS, Windows(Universal) and Electron:
+## Running demo on Web, Android, iOS, Windows(Universal) and Electron:
 <p align="center">
 <img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450"  width="260">
 <img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" height="450"  width="260">
@@ -105,6 +105,16 @@ node scripts/addDevDependencies.js
 </p>
 
 ------
-### LICENSE
+## LICENSE
 
 GNU GENERAL PUBLIC LICENSE
+
+## Sponsors
+
+If your company is paying to you to contribute on `re-start` development, don't doubt on include it yourself here in this section with some link and send us a pull-request! :-) Full list of particular contributors can be found at https://github.com/react-everywhere/re-start/graphs/contributors
+
+- [Quantum BA](https://quantum-ba.com/)
+
+## Companies and projects using re-start
+
+If your company or your project is using `re-start`, don't doubt on include it yourself here in this section with some link and send us a pull-request! :-)
