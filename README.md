@@ -90,7 +90,6 @@ node scripts/addDevDependencies.js
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
 - [x] Support for electron <br/>
 - [ ] Compatibility with React 16 <br/>
-- [ ] Support for react-native-macOS<br/>
 
 ---
 ## Running demo on Web, Android, iOS, Windows(Universal) and Electron:
@@ -105,16 +104,34 @@ node scripts/addDevDependencies.js
 </p>
 
 ------
-## LICENSE
 
-GNU GENERAL PUBLIC LICENSE
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars0.githubusercontent.com/u/7105580?v=4" width="100px;"/><br /><sub>Amogh Banta</sub>](http://www.amoghbanta.com)<br />[💻](https://github.com/amoghbanta/re-start/commits?author=amoghbanta "Code") [🎨](#design-amoghbanta "Design") [📖](https://github.com/amoghbanta/re-start/commits?author=amoghbanta "Documentation") [🐛](https://github.com/amoghbanta/re-start/issues?q=author%3Aamoghbanta "Bug reports") [🤔](#ideas-amoghbanta "Ideas, Planning, & Feedback") [⚠️](https://github.com/amoghbanta/re-start/commits?author=amoghbanta "Tests") | [<img src="https://avatars1.githubusercontent.com/u/532414?v=4" width="100px;"/><br /><sub>Jesús Leganés-Combarro</sub>](http://pirannafs.blogspot.com)<br />[💻](https://github.com/amoghbanta/re-start/commits?author=piranna "Code") [🤔](#ideas-piranna "Ideas, Planning, & Feedback") [🐛](https://github.com/amoghbanta/re-start/issues?q=author%3Apiranna "Bug reports") [⚠️](https://github.com/amoghbanta/re-start/commits?author=piranna "Tests") [👀](#review-piranna "Reviewed Pull Requests") [📖](https://github.com/amoghbanta/re-start/commits?author=piranna "Documentation") | [<img src="https://avatars1.githubusercontent.com/u/177822?v=4" width="100px;"/><br /><sub>Christopher Hein</sub>](http://chrishein.com)<br />[📖](https://github.com/amoghbanta/re-start/commits?author=christopherhein "Documentation") [🐛](https://github.com/amoghbanta/re-start/issues?q=author%3Achristopherhein "Bug reports") | [<img src="https://avatars0.githubusercontent.com/u/593122?v=4" width="100px;"/><br /><sub>DuncanMacWeb</sub>](https://github.com/DuncanMacWeb)<br />[💻](https://github.com/amoghbanta/re-start/commits?author=DuncanMacWeb "Code") |
+| :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+Full list of contributors can be found [here](https://github.com/react-everywhere/re-start/graphs/contributors).
+
+
+
 
 ## Sponsors
 
-If your company is paying to you to contribute on `re-start` development, don't doubt on include it yourself here in this section with some link and send us a pull-request! :-) Full list of particular contributors can be found at https://github.com/react-everywhere/re-start/graphs/contributors
+These are the companies helping `re-start`'s development in some manner or other.
 
+- [DigiCred Technologies](https://github.com/DigiCred) 
 - [Quantum BA](https://quantum-ba.com/)
 
 ## Companies and projects using re-start
 
-If your company or your project is using `re-start`, don't doubt on include it yourself here in this section with some link and send us a pull-request! :-)
+If you use `re-start` in any of your projects, send us a pull-request with the link. :smile:
+
+
+## LICENSE
+
+MIT
+
