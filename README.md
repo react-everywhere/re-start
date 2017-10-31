@@ -17,7 +17,7 @@
 ## Current status: 
 What used to be react-native-everywhere before is now re-start (where re stands for react-everywhere).
 Good news is that react-native-cli now supports [templates](https://github.com/facebook/react-native/pull/12548).
-So, it makes makes much more sense if this project is a react-native-template, 
+So, it makes much more sense if this project is a react-native-template, 
 which will remove the need to update this project with every major release of react-native.
 It just works as of now on all the platforms.
 So, no more git cloning.
