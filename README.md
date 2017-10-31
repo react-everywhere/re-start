@@ -120,7 +120,7 @@ Full list of contributors can be found [here](https://github.com/react-everywher
 
 ## Sponsors
 
-These are the companies contribution to `re-start`'s development in some way or other.
+These are the companies contributing to `re-start`'s development in some way or other.
 
 - [DigiCred Technologies](https://github.com/DigiCred) 
 - [Quantum BA](https://quantum-ba.com/)
