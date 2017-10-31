@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-everywhere",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "scripts": {
     "add": "all-contributors add",
     "generate": "all-contributors generate"
@@ -18,7 +18,8 @@
     "boilerplate",
     "kit",
     "everywhere",
-    "native"
+    "native",
+    "re-start"
   ],
   "author": "Amogh Banta",
   "license": "GPL",

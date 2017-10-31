@@ -1,0 +1,58 @@
+{
+  "projectName": "re-start",
+  "projectOwner": "amoghbanta",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "amoghbanta",
+      "name": "Amogh Banta",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7105580?v=4",
+      "profile": "http://www.amoghbanta.com",
+      "contributions": [
+        "code",
+        "design",
+        "doc",
+        "bug",
+        "ideas",
+        "test"
+      ]
+    },
+    {
+      "login": "piranna",
+      "name": "Jesús Leganés-Combarro",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/532414?v=4",
+      "profile": "http://pirannafs.blogspot.com",
+      "contributions": [
+        "code",
+        "ideas",
+        "bug",
+        "test",
+        "review",
+        "doc"
+      ]
+    },
+    {
+      "login": "christopherhein",
+      "name": "Christopher Hein",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/177822?v=4",
+      "profile": "http://chrishein.com",
+      "contributions": [
+        "doc",
+        "bug"
+      ]
+    },
+    {
+      "login": "DuncanMacWeb",
+      "name": "DuncanMacWeb",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/593122?v=4",
+      "profile": "https://github.com/DuncanMacWeb",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
+}
