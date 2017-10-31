@@ -35,6 +35,18 @@
         "doc"
       ]
     },
+
+    {
+      "login": "ankitpopli1891",
+      "name": "Ankit Popli",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1699793?v=4",
+      "profile": "https://ankitpopli.me",
+      "contributions": [
+        "review",
+         "ideas",
+         "bug"
+      ]
+    },
     {
       "login": "christopherhein",
       "name": "Christopher Hein",
