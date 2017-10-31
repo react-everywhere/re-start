@@ -1,6 +1,10 @@
 {
   "name": "react-native-template-everywhere",
   "version": "0.3.1",
+  "scripts": {
+    "add": "all-contributors add",
+    "generate": "all-contributors generate"
+  },
   "description": "react-native template to target multiple platforms.",
   "repository": {
     "type": "git",
