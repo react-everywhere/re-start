@@ -1,7 +1,6 @@
 # re-start :globe_with_meridians: :iphone: :computer:
 
 [![npm version](https://badge.fury.io/js/react-native-template-everywhere.svg)](https://badge.fury.io/js/react-native-template-everywhere)
-[![Greenkeeper badge](https://badges.greenkeeper.io/react-everywhere/re-start.svg)](https://greenkeeper.io/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 [![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
@@ -121,7 +120,7 @@ Full list of contributors can be found [here](https://github.com/react-everywher
 
 ## Sponsors
 
-These are the companies helping `re-start`'s development in some manner or other.
+These are the companies contribution to `re-start`'s development in some way or other.
 
 - [DigiCred Technologies](https://github.com/DigiCred) 
 - [Quantum BA](https://quantum-ba.com/)
