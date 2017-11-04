@@ -1,8 +1,8 @@
 import React from 'react';
 import {Provider} from "react-redux";
-import store from "../../src/utilities/storage/store";
-import TopLevelComponent from '../../src/screens/EntryScreen';
-import Routing, {Router} from '../../src/utilities/routing/index';
+import store from "./src/utilities/storage/store";
+import TopLevelComponent from './src/screens/EntryScreen';
+import Routing, {Router} from './src/utilities/routing/index';
 
 const Route = Routing.Route;
 

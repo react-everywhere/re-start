@@ -64,7 +64,7 @@ function updatePackageJson() {
 }
 
 function removeExtraFiles() {
-    execSync(`rm -rf devDependencies.json`);
+    execSync(`rm devDependencies.json`);
 }
 
 installDevDependencies();

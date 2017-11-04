@@ -55,17 +55,16 @@ function updatePackageJson() {
     console.log(`Adding scripts for web to package.json`);
     file.scripts['web'] = "react-scripts start";
     file.scripts["build"] = "react-scripts build";
-    file.scripts["test-web"] = "react-scripts test --env=jsdom";
+    file.scripts["test:web"] = "react-scripts test --env=jsdom";
     file.scripts["eject"] = "react-scripts eject";
     file.scripts["electron"] = "react-scripts start & electron .";
     console.log(`Adding entry point for electron`);
     file['main'] = "index.electron.js";
-    file['resolutions'] = {"moment-timezone/moment": "2.19.0"};
     fs.writeFileSync(fileName, JSON.stringify(file));
 }
 
 function removeExtraFiles() {
-    execSync(`rm -rf devDependencies.json`);
+    execSync(`rm devDependencies.json`);
 }
 
 installDevDependencies();
