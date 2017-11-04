@@ -1,7 +1,6 @@
 {
-  "name": "react-native-template-restart-test",
-  "version": "0.3.7",
-  "description": "react-native template to target multiple platforms.",
+  "name": "re-start-templates",
+  "description": "react-native templates collection to target multiple platforms.",
   "repository": {
     "type": "git",
     "url": "git@github.com:react-everywhere/re-start.git"

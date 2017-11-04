@@ -5,6 +5,7 @@
 
 ### Step 2: Describe your environment
 
+  * **template name** : (re-base/re-dux/re-route/re-start)
   * **template version** : (0.x.x)
   * **react-native version**: (0.xx.x)
   * **OS** : (osX/Windows/Linux)

@@ -36,7 +36,7 @@ react-native init <Your Project Name> --template everywhere --version="0.44.2"
 - Since react-native-template does'nt support adding dev dependencies and custom scripts to package.json,
  so I have created a custom script to do that.
 ```
-node scripts/addDevDependencies.js
+node scripts/additionalDependencies.js
 ```
 #### Notes:
  - If the above script fails due to some reason, you can do it manually by copying the contents
