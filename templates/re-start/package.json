@@ -1,12 +1,13 @@
 {
   "name": "react-native-template-re-start",
-  "version": "0.4.12",
+  "version": "0.1.2",
   "description": "react-native template to target multiple platforms.",
   "repository": {
     "type": "git",
     "url": "git@github.com:react-everywhere/re-start.git"
   },
   "keywords": [
+    "re-start",
     "react",
     "react-native",
     "template",
