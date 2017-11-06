@@ -31,12 +31,13 @@ react-native CLI (`npm install -g react-native-cli`)
 All you have to do is:
 - Create a new react-native project using react-native-cli and specify this project as a template:
 ```
-react-native init <Your Project Name> --template everywhere --version="0.44.2"
+react-native init yourProjectName --template re-start
 ```
 - Since react-native-template does'nt support adding dev dependencies and custom scripts to package.json,
  so I have created a custom script to do that.
 ```
-node scripts/addDevDependencies.js
+cd yourProjectName
+node scripts/additionalDependencies.js
 ```
 #### Notes:
  - If the above script fails due to some reason, you can do it manually by copying the contents
