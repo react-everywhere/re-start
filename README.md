@@ -5,7 +5,6 @@
 [![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
 
-### This project is a react-native [template](https://github.com/facebook/react-native/pull/12548). So no more git cloning or manual upgrading. :tada:
 
 
 
@@ -15,6 +14,7 @@
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project (based on create-react-app).
 * Achieve 'Write once use everywhere' with react-native (though react strictly says 'Learn once use anywhere').
+* Mitigate git cloning or manual upgrading of boiler plates, which is possible because this project is a react-native [template](https://github.com/facebook/react-native/pull/12548). :tada:
 
 
 
@@ -43,7 +43,7 @@ react-native CLI (`npm install -g react-native-cli`)
 All you have to do is:
 - Create a new react-native project using react-native-cli and specify this project as a template:
 ```
-react-native init <Your Project Name> --template everywhere --version="0.44.2"
+react-native init <Your Project Name> --template <Template Name>
 ```
 - Since react-native-template does'nt support adding dev dependencies and custom scripts to package.json,
  so I have created a custom script to do that.
@@ -101,6 +101,7 @@ node scripts/additionalDependencies.js
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
 - [x] Support for electron <br/>
 - [x] Compatibility with React 16 <br/>
+- [ ] Add Docs and FAQs <br/>
 - [ ] Configure Travis and Greenkeeper <br/>
 - [ ] Interactive CLI to create templates and components <br/>
 
