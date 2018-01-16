@@ -1,24 +1,27 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
     Platform,
     StyleSheet,
+    ReactNative,
     Text,
     View
 } from 'react-native';
+
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
     android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
+    web: 'You are good to go.'
 });
 
-export default class App extends Component {
+class App extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    Welcome to re-base, a re-start-template
+                    Welcome to re-route, a react-native template
                 </Text>
                 <Text style={styles.instructions}>
                     To get started, edit App.js
