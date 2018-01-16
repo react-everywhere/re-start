@@ -26,10 +26,10 @@ Based on your requirements and preferences, you can choose a templates that suit
 
 | Template Name  | Description | Installation Command  |  Version |
 | ------------- | ------------- | ------------- | ------------- |
-| `re-base`  | The most basic version that runs on all platforms  | `react-native init <Your Project Name> --template re-base`  | [![npm](https://img.shields.io/npm/v/react-native-template-re-base.svg?style=flat-square)](https://www.npmjs.com/package/react-native-template-re-base)  |
-| `re-dux`  | `re-base` with redux wired out of the box  | `react-native init <Your Project Name> --template re-dux`   | [![npm](https://img.shields.io/npm/v/react-native-template-re-dux.svg?style=flat-square)](https://www.npmjs.com/package/react-native-template-re-dux)  |
-| `re-route`  | `re-base` with react-router wired out of the box  | `react-native init <Your Project Name> --template re-route`   | [![npm](https://img.shields.io/npm/v/react-native-template-re-route.svg?style=flat-square)](https://www.npmjs.com/package/react-native-template-re-route)  |
-| `re-start`  | `re-base` combined with redux and react-router  | `react-native init <Your Project Name> --template re-start`   | [![npm](https://img.shields.io/npm/v/react-native-template-re-start.svg?style=flat-square)](https://www.npmjs.com/package/react-native-template-re-start)  |
+| `re-base`  | The most basic version that runs on all platforms  | `react-native init <Your Project Name> --template re-base`  | [![npm version](https://badge.fury.io/js/react-native-template-re-base.svg)](https://badge.fury.io/js/react-native-template-re-base)  |
+| `re-dux`  | `re-base` with redux wired out of the box  | `react-native init <Your Project Name> --template re-dux`   | [![npm version](https://badge.fury.io/js/react-native-template-re-dux.svg)](https://badge.fury.io/js/react-native-template-re-dux)  |
+| `re-route`  | `re-base` with react-router wired out of the box  | `react-native init <Your Project Name> --template re-route`   | [![npm version](https://badge.fury.io/js/react-native-template-re-route.svg)](https://badge.fury.io/js/react-native-template-re-route)  |
+| `re-start`  | `re-base` combined with redux and react-router  | `react-native init <Your Project Name> --template re-start`   | [![npm version](https://badge.fury.io/js/react-native-template-re-start.svg)](https://badge.fury.io/js/react-native-template-re-start)  |
  
  
  
