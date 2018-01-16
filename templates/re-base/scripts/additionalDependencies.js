@@ -63,11 +63,7 @@ function updatePackageJson() {
     fs.writeFileSync(fileName, JSON.stringify(file));
 }
 
-function removeExtraFiles() {
-    execSync(`rm devDependencies.json`);
-}
 
 installDevDependencies();
 updatePackageJson();
-removeExtraFiles();
 
