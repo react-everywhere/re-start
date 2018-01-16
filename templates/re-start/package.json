@@ -18,7 +18,7 @@
     "native"
   ],
   "author": "Amogh Banta",
-  "license": "GPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
   },
