@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-re-dux",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "react-native template to target multiple platforms.",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "native"
   ],
   "author": "Amogh Banta",
-  "license": "GPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
   },
