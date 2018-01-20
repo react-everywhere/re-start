@@ -1,28 +1,29 @@
 # re-start :globe_with_meridians: :iphone: :computer:
 
-[![npm version](https://badge.fury.io/js/react-native-template-everywhere.svg)](https://badge.fury.io/js/react-native-template-everywhere)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 [![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
-
-## This project is an attempt to: 
+## Aim of this project is  to:
 * Target multiple platforms (Android, iOS, Web, Windows[UWP] and Electron[macOS, Ubuntu, Windows]) with react native' APIs and a single codebase.
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project (based on create-react-app).
 * Achieve 'Write once use everywhere' with react-native (though react strictly says 'Learn once use anywhere').
+* Mitigate git cloning or manual upgrading of boiler plates, which is possible because this project is a react-native [template](https://github.com/facebook/react-native/pull/12548). :tada:
 
+## Structure of the project:
 
-## Current status: 
-What used to be react-native-everywhere before is now re-start (where re stands for react-everywhere).
-Good news is that react-native-cli now supports [templates](https://github.com/facebook/react-native/pull/12548).
-So, it makes much more sense if this project is a react-native-template, 
-which will remove the need to update this project with every major release of react-native.
-It just works as of now on all the platforms.
-So, no more git cloning.
+* This project comprises of several templates that are curated keeping in mind the various use cases of initiating a new project.
+Based on your requirements and preferences, you can choose a templates that suits your you case the best.
 
- 
-## Usage 
+| Template Name | Description | Installation Command | Version |
+| ------------- | ----------- | -------------------- | ------- |
+| `re-base`     | The most basic version that runs on all platforms | `react-native init <Your Project Name> --template re-base`  | [![npm version](https://badge.fury.io/js/react-native-template-re-base.svg)](https://badge.fury.io/js/react-native-template-re-base)  |
+| `re-dux`      | `re-base` with redux wired out of the box         | `react-native init <Your Project Name> --template re-dux`   | [![npm version](https://badge.fury.io/js/react-native-template-re-dux.svg)](https://badge.fury.io/js/react-native-template-re-dux) |
+| `re-route`    | `re-base` with react-router wired out of the box  | `react-native init <Your Project Name> --template re-route` | [![npm version](https://badge.fury.io/js/react-native-template-re-route.svg)](https://badge.fury.io/js/react-native-template-re-route) |
+| `re-start`    | `re-base` combined with redux and react-router    | `react-native init <Your Project Name> --template re-start  | [![npm version](https://badge.fury.io/js/react-native-template-re-start.svg)](https://badge.fury.io/js/react-native-template-re-start) |
+
+## Usage
 
 ### Pre-requisites:
 Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-started/installing-node))<br/>
@@ -31,12 +32,12 @@ react-native CLI (`npm install -g react-native-cli`)
 All you have to do is:
 - Create a new react-native project using react-native-cli and specify this project as a template:
 ```
-react-native init <Your Project Name> --template everywhere --version="0.44.2"
+react-native init <Your Project Name> --template <Template Name>
 ```
 - Since react-native-template does'nt support adding dev dependencies and custom scripts to package.json,
  so I have created a custom script to do that.
 ```
-node scripts/addDevDependencies.js
+node scripts/additionalDependencies.js
 ```
 #### Notes:
  - If the above script fails due to some reason, you can do it manually by copying the contents
@@ -78,9 +79,9 @@ node scripts/addDevDependencies.js
 -------
 ## Some very useful cross platform compatible libraries:
 - [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
-- [re-render](https://github.com/amoghbanta/re-render) (this is experimental and a WIP)
 - [axios](https://github.com/mzabriskie/axios)
-- [react-navigation](https://github.com/react-community/react-navigation) (might be included in ReactNativeEverywhere soon)
+- [react-router](https://github.com/ReactTraining/react-router)
+- [re-render](https://github.com/amoghbanta/re-render) (this is experimental and a WIP)
 
 
 -------
@@ -88,7 +89,10 @@ node scripts/addDevDependencies.js
 - [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))<br/>
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
 - [x] Support for electron <br/>
-- [ ] Compatibility with React 16 <br/>
+- [x] Compatibility with React 16 <br/>
+- [ ] Add Docs and FAQs <br/>
+- [ ] Configure Travis and Greenkeeper <br/>
+- [ ] Interactive CLI to create templates and components <br/>
 
 ---
 ## Running demo on Web, Android, iOS, Windows(Universal) and Electron:
@@ -104,7 +108,6 @@ node scripts/addDevDependencies.js
 
 ------
 
-
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
@@ -115,22 +118,11 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 Full list of contributors can be found [here](https://github.com/react-everywhere/re-start/graphs/contributors).
 
+## Companies that contribute to `re-start`'s development:
 
-
-
-## Sponsors
-
-These are the companies contribution to `re-start`'s development in some way or other.
-
-- [DigiCred Technologies](https://github.com/DigiCred) 
+- [DigiCred Technologies](https://github.com/DigiCred)
 - [Quantum BA](https://quantum-ba.com/)
-
-## Companies and projects using re-start
-
-If you use `re-start` in any of your projects, send us a pull-request with the link. :smile:
-
 
 ## LICENSE
 
 MIT
-

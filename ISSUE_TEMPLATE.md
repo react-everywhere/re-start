@@ -5,11 +5,12 @@
 
 ### Step 2: Describe your environment
 
+  * **template name** : (re-base/re-dux/re-route/re-start)
   * **template version** : (0.x.x)
   * **react-native version**: (0.xx.x)
   * **OS** : (osX/Windows/Linux)
   * **Platform causing error**: (android/ios/web/electron)
-  
+
 ### Step 3: Describe the problem (try to include screenshots):
 
 #### Steps to reproduce:
@@ -17,15 +18,15 @@
   1. _____
   2. _____
   3. _____
-  
+
 #### Observed Results:
 
   * What happened?  This could be a description, log output, etc.
-  
+
 #### Expected Results:
 
   * What were you expecting to happen?
-  
+
 #### Relevant Code/Commands:
 
   ```

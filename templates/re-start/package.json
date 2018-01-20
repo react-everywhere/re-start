@@ -1,16 +1,13 @@
 {
-  "name": "re-start-templates",
-  "version": "0.3.2",
-  "scripts": {
-    "add": "all-contributors add",
-    "generate": "all-contributors generate"
-  },
-  "description": "react-native templates collection to target multiple platforms.",
+  "name": "react-native-template-re-start",
+  "version": "0.51.0",
+  "description": "react-native template to target multiple platforms.",
   "repository": {
     "type": "git",
     "url": "git@github.com:react-everywhere/re-start.git"
   },
   "keywords": [
+    "re-start",
     "react",
     "react-native",
     "template",
@@ -18,13 +15,9 @@
     "boilerplate",
     "kit",
     "everywhere",
-    "native",
-    "re-start"
+    "native"
   ],
   "author": "Amogh Banta",
-  "contributors": [
-    "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>"
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
