@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 'use strict';
 
-const execSync = require('child_process').execSync;
-const fs = require('fs');
-const path = require('path');
+const {execSync} = require('child_process');
+const {readFileSync, unlinkSync, writeFileSync} = require('fs');
+const {resolve} = require('path');
 
 /**
  * Use Yarn if available, it's much faster than the npm client.
@@ -24,8 +26,8 @@ function getYarnVersionIfAvailable() {
 function installDevDependencies() {
     console.log('Adding dev dependencies for the project...');
 
-    const devDependenciesJsonPath = path.resolve('devDependencies.json');
-    const devDependencies = JSON.parse(fs.readFileSync(devDependenciesJsonPath));
+    const devDependenciesJsonPath = resolve('devDependencies.json');
+    const devDependencies = JSON.parse(readFileSync(devDependenciesJsonPath));
     let depsToInstall = [];
 
     for (const depName in devDependencies) {
@@ -42,28 +44,41 @@ function installDevDependencies() {
         execSync(`npm install ${depsToInstall} --save`);
     }
     console.log("Deleting devDependencies.json...");
-    execSync(`rm  ${devDependenciesJsonPath}`);
+    unlinkSync(devDependenciesJsonPath);
 }
 
 //"resolutions": { "moment-timezone/moment": "2.19.0" }
 
 function updatePackageJson() {
     const fileName = "package.json";
-    const packageFile = path.resolve(fileName);
-    let file = require(packageFile);
+    const file = require(resolve(fileName));
+
     //these are the scripts that will be added to package.json
     console.log(`Adding scripts for web to package.json`);
-    file.scripts['web'] = "react-scripts start";
-    file.scripts["build"] = "react-scripts build";
-    file.scripts["test:web"] = "react-scripts test --env=jsdom";
-    file.scripts["eject"] = "react-scripts eject";
-    file.scripts["electron"] = "react-scripts start & electron .";
-    console.log(`Adding entry point for electron`);
-    file['main'] = "index.electron.js";
-    fs.writeFileSync(fileName, JSON.stringify(file));
+    Object.assign(file.scripts,
+    {
+      "android": "react-native run-android",
+      "android:dev_menu": "adb shell input keyevent KEYCODE_MENU",
+      "android:kill_server": "fuser -k 8081/tcp || true",
+      "android:log": "react-native log-android",
+      "android:release": "cd android && ./gradlew assembleRelease",
+      "eject": "react-scripts eject",
+      "electron": "electron .",
+      "ios": "react-native run-ios",
+      "preelectron": "PUBLIC_URL=. npm run web:release",
+      "release": "npm run android:release && npm run web:release",
+      "test:web": "react-scripts test --env=jsdom",
+      "web": "react-scripts start",
+      "web:release": "react-scripts build",
+      "windows": "react-native run-windows"
+    })
+
+    writeFileSync(fileName, JSON.stringify(file, null, 2));
 }
 
 
 installDevDependencies();
 updatePackageJson();
 
+// We have already installed the aditional dependencies, delete ourselves
+unlinkSync(__filename);

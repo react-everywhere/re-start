@@ -1,5 +1,6 @@
 {
   "react": "^16.2.0",
   "react-dom": "^16.2.0",
-  "react-native-web": "0.1.13"
+  "react-native-web": "^0.1.13",
+  "react-native-windows": "^0.50.0"
 }

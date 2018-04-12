@@ -1,6 +1,6 @@
 {
-  "short_name": "re-start",
-  "name": "Re-base, a re-start template",
+  "short_name": "HelloWorld",
+  "name": "Hello App Display Name",
   "icons": [
     {
       "src": "favicon.ico",
