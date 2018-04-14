@@ -1,3 +1,7 @@
+/**
+ * Electron platform entry point
+ */
+
 // HACK Electron uses the `main` field from the `package.json` file to detect
 // its entry point file, so if the project is used as a dependency instead of an
 // Electron app, we need to check the environment to be able to return the

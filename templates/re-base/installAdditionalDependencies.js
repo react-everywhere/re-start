@@ -3,7 +3,7 @@
 'use strict';
 
 const {execSync} = require('child_process');
-const {readFileSync, unlinkSync, writeFileSync} = require('fs');
+const {existsSync, readFileSync, renameSync, unlinkSync, writeFileSync} = require('fs');
 const {resolve} = require('path');
 
 /**
@@ -47,7 +47,15 @@ function installDevDependencies() {
     unlinkSync(devDependenciesJsonPath);
 }
 
-//"resolutions": { "moment-timezone/moment": "2.19.0" }
+function moveAppJs() {
+  const src  = resolve('App.js')
+  const dest = resolve('src', 'App.js')
+
+  if(existsSync(dest))
+    unlinkSync(src)
+  else
+    renameSync(src, dest);
+}
 
 function updatePackageJson() {
     const fileName = "package.json";
@@ -81,6 +89,7 @@ function updatePackageJson() {
 
 
 installDevDependencies();
+moveAppJs();
 updatePackageJson();
 
 
