@@ -7,6 +7,7 @@
     "url": "git@github.com:react-everywhere/re-start.git"
   },
   "keywords": [
+    "re-route",
     "react",
     "react-native",
     "template",
@@ -17,7 +18,13 @@
     "native"
   ],
   "author": "Amogh Banta",
+  "contributors": [
+    "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>"
+  ],
   "license": "MIT",
+  "dependencies": {
+    "react-native-template-re-base": "0.2.1"
+  },
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
   },

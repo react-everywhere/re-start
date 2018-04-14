@@ -1,13 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {connect} from "react-redux";
-import  SampleAction from './../actions/SampleAction';
-import TopLevelScreenComponent from './../components/TopLevelScreenComponent'
-import {
-    StyleSheet,
-    View,
-} from 'react-native';
 
-class EntryScreen extends React.Component {
+import  SampleAction from './../actions/SampleAction';
+import TopLevelComponent from '../components/TopLevelComponent'
+
+
+class EntryScreen extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
@@ -30,35 +28,20 @@ class EntryScreen extends React.Component {
     }
 
     render() {
-
         return (
-            <View style={styles.container}>
-                <TopLevelScreenComponent
-                    passDispatchedAction={this.passDispatchedAction}
-                    failDispatchedAction={this.failDispatchedAction}
-                    message={this.props.sampleReducer.message}
-                />
-            </View>
+            <TopLevelComponent
+                passDispatchedAction={this.passDispatchedAction}
+                failDispatchedAction={this.failDispatchedAction}
+                message={this.props.sampleReducer.message}
+            />
         );
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-    }
-});
-
-function mapStateToProps(state) {
-    return ({
-            sampleReducer: state.sampleReducer
-        }
-
-    )
+function mapStateToProps({sampleReducer}) {
+    return ({sampleReducer})
 }
+
 
 export default connect(mapStateToProps)(EntryScreen);
 

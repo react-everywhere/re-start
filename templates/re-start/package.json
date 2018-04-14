@@ -18,7 +18,14 @@
     "native"
   ],
   "author": "Amogh Banta",
+  "contributors": [
+    "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>"
+  ],
   "license": "MIT",
+  "dependencies": {
+    "react-native-template-re-dux": "0.2.1",
+    "react-native-template-re-route": "0.2.1"
+  },
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
   },

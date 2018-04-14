@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
+    Button,
     StyleSheet,
     Text,
-    View,
-    Button
+    View
 } from 'react-native';
 
 // This is a dumb component that is common for native and web
 
-class TopLevelScreenComponent extends React.Component {
+export default class TopLevelComponent extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
@@ -20,9 +20,8 @@ class TopLevelScreenComponent extends React.Component {
     }
 
     render() {
-
         return (
-            <View>
+            <View style={styles.container}>
                 <Text style={styles.biggerText}>
                     {this.state.message}
                 </Text>
@@ -55,6 +54,9 @@ class TopLevelScreenComponent extends React.Component {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1
+    },
     row: {
         flexDirection: 'row',
         margin: 5,
@@ -69,6 +71,3 @@ const styles = StyleSheet.create({
         margin: 5
     }
 });
-
-export default TopLevelScreenComponent;
-

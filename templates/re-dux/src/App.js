@@ -1,7 +1,8 @@
 import React from 'react';
 import {Provider} from "react-redux";
-import store from "./utilities/storage/store";
+
 import EntryScreen from './screens/EntryScreen';
+import store from "./utilities/storage/store";
 
 
 class App extends React.Component {
@@ -15,4 +16,4 @@ class App extends React.Component {
 }
 
 
-ReactNative.render(<App/>, document.getElementById('root'));
+export default App;

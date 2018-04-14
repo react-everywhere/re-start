@@ -1,8 +1,8 @@
 import React from 'react';
 import {Provider} from "react-redux";
-import ReactNative from 'react-native'
+
+import EntryScreen from './screens/EntryScreen';
 import store from "./utilities/storage/store";
-import TopLevelComponent from './screens/EntryScreen';
 import Routing, {Router} from './utilities/routing/index';
 
 const Route = Routing.Route;
@@ -13,11 +13,12 @@ class App extends React.Component {
         return (
             <Provider store={store}>
                 <Router>
-                    <Route path='/' component={TopLevelComponent}/>
+                    <Route path='/' component={EntryScreen}/>
                 </Router>
             </Provider>
         );
     }
 }
 
-ReactNative.render(<App/>, document.getElementById('root'));
+
+export default App;
