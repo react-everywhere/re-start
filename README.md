@@ -30,15 +30,17 @@ Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-starte
 react-native CLI (`npm install -g react-native-cli`)
 
 All you have to do is:
-- Create a new react-native project using react-native-cli and specify this project as a template:
-```
-react-native init <Your Project Name> --template <Template Name>
-```
-- Since react-native-template does'nt support adding dev dependencies and custom scripts to package.json,
- so I have created a custom script to do that.
-```
-node scripts/additionalDependencies.js
-```
+- Create a new react-native project using react-native-cli and specify this
+  project as a template:
+  ```sh
+  react-native init <Your Project Name> --template <Template Name>
+  ```
+- Since react-native-template doesn't support adding dev dependencies and custom
+  scripts to package.json, I have created a custom script to do that.
+  ```sh
+  ./installAdditionalDependencies.js
+  ```
+
 #### Notes:
  - If the above script fails due to some reason, you can do it manually by copying the contents
  of devDependencies.json to your package.json's devDependencies object and adding following to the scripts object.
@@ -54,27 +56,44 @@ node scripts/additionalDependencies.js
 ## Run the project on a specific platform:
 
 ### Android
-`react-native run-android`
-
-### iOS
-`react-native run-ios`
-
-### Web
-`npm/yarn run web`
-
-### Windows
-`react-native windows`
-`react-native run-windows`
+```sh
+npm/yarn run android
+```
 
 ### Desktop (Electron)
-`npm/yarn run electron`
+```sh
+npm/yarn run electron
+```
+
+### iOS
+```sh
+npm/yarn run ios
+```
+
+### Web
+```sh
+npm/yarn run web
+```
+
+### Windows
+```sh
+npm/yarn run windows
+```
 
 ## Build for production:
 ### Android/iOS
-[This will help](https://facebook.github.io/react-native/docs/running-on-device.html)
+```sh
+npm/yarn run web
+```
+In case of problems, this
+[tutorial](https://facebook.github.io/react-native/docs/running-on-device.html)
+will help you to configure your environment.
 
 ### Web
-`npm/yarn run build` (this will build your production ready bundle)
+```sh
+npm/yarn run web:release
+```
+This will build your production ready bundle
 
 -------
 ## Some very useful cross platform compatible libraries:
