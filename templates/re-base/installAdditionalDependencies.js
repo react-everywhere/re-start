@@ -73,6 +73,9 @@ function updatePackageJson() {
       "windows": "react-native run-windows"
     })
 
+    // Electron entry point
+    file.main = 'index.electron.js'
+
     writeFileSync(fileName, JSON.stringify(file, null, 2));
 }
 

@@ -1,3 +1,11 @@
+// HACK Electron uses the `main` field from the `package.json` file to detect
+// its entry point file, so if the project is used as a dependency instead of an
+// Electron app, we need to check the environment to be able to return the
+// project correct main source code file instead of exec this one
+if(!process.versions.electron || require.main !== module)
+  return require('./src/App');
+
+
 const {app, BrowserWindow} = require('electron');
 
 // Keep a global reference of the window object, if you don't, the window will
