@@ -80,5 +80,6 @@ function updatePackageJson() {
 installDevDependencies();
 updatePackageJson();
 
+
 // We have already installed the aditional dependencies, delete ourselves
 unlinkSync(__filename);
