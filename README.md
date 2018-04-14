@@ -2,19 +2,24 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![re-start (1).png](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
+[![re-start](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
-## Aim of this
-* Target multiple platforms (Android, iOS, Web, Windows[UWP] and Electron[macOS, Ubuntu, Windows]) with react native' APIs and a single codebase.
+## Aim of the project
+* Target multiple platforms (Android, iOS, Web, Windows[UWP] and Electron[macOS,
+  Ubuntu, Windows]) with react native' APIs and a single codebase.
 * Follow best practices while doing the above.
-* Cut out the time and effort it takes to setup the project (based on create-react-app).
-* Achieve 'Write once use everywhere' with react-native (though react strictly says 'Learn once use anywhere').
-* Mitigate git cloning or manual upgrading of boiler plates, which is possible because this project is a react-native [template](https://github.com/facebook/react-native/pull/12548). :tada:
+* Cut out the time and effort it takes to setup the project (based on
+  `create-react-app`).
+* Achieve 'Write once use everywhere' with react-native (though react strictly
+  says 'Learn once use anywhere').
+* Mitigate git cloning or manual upgrading of boiler plates, which is possible
+  because this project is a react-native [template](https://github.com/facebook/react-native/pull/12548). :tada:
 
-## Structure of the project:
+## Structure of the project
 
-* This project comprises of several templates that are curated keeping in mind the various use cases of initiating a new project.
-Based on your requirements and preferences, you can choose a templates that suits your you case the best.
+* This project comprises of several templates that are curated keeping in mind
+  the various use cases of initiating a new project. Based on your requirements
+  and preferences, you can choose a templates that suits your you case the best.
 
 | Template Name | Description | Version |
 | ------------- | ----------- | ------- |
@@ -24,10 +29,9 @@ Based on your requirements and preferences, you can choose a templates that suit
 | `re-start`    | `re-base` combined with redux and react-router    | [![npm version](https://badge.fury.io/js/react-native-template-re-start.svg)](https://badge.fury.io/js/react-native-template-re-start) |
 
 ## Usage
-
-### Pre-requisites:
-Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-started/installing-node))<br/>
-react-native CLI (`npm install -g react-native-cli`)
+### Pre-requisites
+- Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-started/installing-node))
+- react-native CLI (`npm install -g react-native-cli`)
 
 ### Install
 
@@ -52,46 +56,55 @@ react-native CLI (`npm install -g react-native-cli`)
 4. Your project should now be ready to build apps for the different platforms.
 
 #### Notes:
- - If the above script fails due to some reason, you can do it manually by copying the contents
- of devDependencies.json to your package.json's devDependencies object and adding following to the scripts object.
- ```
-"web": "node scripts/start.js",
-"build": "node scripts/build.js"
-```
-- react-native-web currently (20th of July, 2017) supports React/ReactDOM 15.4, 15.5, or 15.6, so make sure you do not upgrade if you want support for web.
-- make sure that the version of react-native-windows is same as your react-native version, if you are targeting windows support.
+- If the `./installAdditionalDependencies.js` script fails due to some reason,
+  you can do it manually by copying the contents of `devDependencies.json` to
+  your `package.json` file `devDependencies` object and adding following to the
+  `scripts` object:
+  ```json
+  {
+    "scripts": {
+      "web": "node scripts/start.js",
+      "build": "node scripts/build.js"
+    }
+  }
+  ```
+- `react-native-web` currently (20th of July, 2017) supports React/ReactDOM
+  15.4, 15.5, or 15.6, so make sure you do not upgrade if you want support for
+  web.
+- make sure that the version of react-native-windows is same as your
+  react-native version, if you are targeting windows support.
 
 ---
 
-## Run the project on a specific platform:
+### Run the project on a specific platform
 
-### Android
+#### Android
 ```sh
 npm/yarn run android
 ```
 
-### Desktop (Electron)
+#### Desktop (Electron)
 ```sh
 npm/yarn run electron
 ```
 
-### iOS
+#### iOS
 ```sh
 npm/yarn run ios
 ```
 
-### Web
+#### Web
 ```sh
 npm/yarn run web
 ```
 
-### Windows
+#### Windows
 ```sh
 npm/yarn run windows
 ```
 
-## Build for production:
-### Android/iOS
+### Build for production
+#### Android/iOS
 ```sh
 npm/yarn run web
 ```
@@ -99,22 +112,23 @@ In case of problems, this
 [tutorial](https://facebook.github.io/react-native/docs/running-on-device.html)
 will help you to configure your environment.
 
-### Web
+#### Web
 ```sh
 npm/yarn run web:release
 ```
 This will build your production ready bundle
 
 -------
-## Some very useful cross platform compatible libraries:
+
+## Some very useful cross platform compatible libraries
 - [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 - [axios](https://github.com/mzabriskie/axios)
 - [react-router](https://github.com/ReactTraining/react-router)
 - [re-render](https://github.com/amoghbanta/re-render) (this is experimental and a WIP)
 
-
 -------
-## Progress:
+
+## Progress
 - [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))<br/>
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
 - [x] Support for electron <br/>
@@ -124,7 +138,9 @@ This will build your production ready bundle
 - [ ] Interactive CLI to create templates and components <br/>
 
 ---
-## Running demo on Web, Android, iOS, Windows(Universal) and Electron:
+
+## Running demo on Web, Android, iOS, Windows(Universal) and Electron
+
 <p align="center">
 <img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450"  width="260">
 <img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" height="450"  width="260">
@@ -147,7 +163,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 Full list of contributors can be found [here](https://github.com/react-everywhere/re-start/graphs/contributors).
 
-## Companies that contribute to `re-start`'s development:
+## Companies that contribute to `re-start`'s development
 
 - [DigiCred Technologies](https://github.com/DigiCred)
 - [Quantum BA](https://quantum-ba.com/)
