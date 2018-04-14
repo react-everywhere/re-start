@@ -16,12 +16,12 @@
 * This project comprises of several templates that are curated keeping in mind the various use cases of initiating a new project.
 Based on your requirements and preferences, you can choose a templates that suits your you case the best.
 
-| Template Name | Description | Installation Command | Version |
-| ------------- | ----------- | -------------------- | ------- |
-| `re-base`     | The most basic version that runs on all platforms | `react-native init <Your Project Name> --template re-base`  | [![npm version](https://badge.fury.io/js/react-native-template-re-base.svg)](https://badge.fury.io/js/react-native-template-re-base)  |
-| `re-dux`      | `re-base` with redux wired out of the box         | `react-native init <Your Project Name> --template re-dux`   | [![npm version](https://badge.fury.io/js/react-native-template-re-dux.svg)](https://badge.fury.io/js/react-native-template-re-dux) |
-| `re-route`    | `re-base` with react-router wired out of the box  | `react-native init <Your Project Name> --template re-route` | [![npm version](https://badge.fury.io/js/react-native-template-re-route.svg)](https://badge.fury.io/js/react-native-template-re-route) |
-| `re-start`    | `re-base` combined with redux and react-router    | `react-native init <Your Project Name> --template re-start  | [![npm version](https://badge.fury.io/js/react-native-template-re-start.svg)](https://badge.fury.io/js/react-native-template-re-start) |
+| Template Name | Description | Version |
+| ------------- | ----------- | ------- |
+| `re-base`     | The most basic version that runs on all platforms | [![npm version](https://badge.fury.io/js/react-native-template-re-base.svg)](https://badge.fury.io/js/react-native-template-re-base)   |
+| `re-dux`      | `re-base` with redux wired out of the box         | [![npm version](https://badge.fury.io/js/react-native-template-re-dux.svg)](https://badge.fury.io/js/react-native-template-re-dux)     |
+| `re-route`    | `re-base` with react-router wired out of the box  | [![npm version](https://badge.fury.io/js/react-native-template-re-route.svg)](https://badge.fury.io/js/react-native-template-re-route) |
+| `re-start`    | `re-base` combined with redux and react-router    | [![npm version](https://badge.fury.io/js/react-native-template-re-start.svg)](https://badge.fury.io/js/react-native-template-re-start) |
 
 ## Usage
 
@@ -29,17 +29,27 @@ Based on your requirements and preferences, you can choose a templates that suit
 Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-started/installing-node))<br/>
 react-native CLI (`npm install -g react-native-cli`)
 
-All you have to do is:
-- Create a new react-native project using react-native-cli and specify this
-  project as a template:
-  ```sh
-  react-native init <Your Project Name> --template <Template Name>
-  ```
-- Since react-native-template doesn't support adding dev dependencies and custom
-  scripts to package.json, I have created a custom script to do that.
-  ```sh
-  ./installAdditionalDependencies.js
-  ```
+### Install
+
+1. Create a new react-native project using `react-native-cli` and specify
+   `re-base` as a template:
+   ```sh
+   react-native init <Your Project Name> --template re-base
+   ```
+2. If you want to use a derived template like `re-dux` or `re-route`, install
+   them directly on top of the just created project. You'll probably get a
+   warning about the project already exists, just say it to overwrite the files.
+   ```sh
+   react-native init <Your Project Name> --template re-dux
+   react-native init <Your Project Name> --template re-route
+   react-native init <Your Project Name> --template re-start
+   ```
+   `re-start` template depend of both `re-route` and `re-dux`, be sure to
+   install them first in that order.
+3. Since `react-native-template` doesn't support adding `devDependencies` and
+   custom scripts to `package.json`, exec `./installAdditionalDependencies.js`
+   to finish the project configuration.
+4. Your project should now be ready to build apps for the different platforms.
 
 #### Notes:
  - If the above script fails due to some reason, you can do it manually by copying the contents
