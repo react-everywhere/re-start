@@ -57,7 +57,6 @@ node scripts/additionalDependencies.js
 "web": "node scripts/start.js",
 "build": "node scripts/build.js"
 ```
-- react-native-web currently (20th of July, 2017) supports React/ReactDOM 15.4, 15.5, or 15.6, so make sure you do not upgrade if you want support for web.
 - make sure that the version of react-native-windows is same as your react-native version, if you are targeting windows support.
 
 ---
