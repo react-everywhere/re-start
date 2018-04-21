@@ -43,8 +43,16 @@ function installDevDependencies() {
     } else {
         execSync(`npm install ${depsToInstall} --save`);
     }
+
     console.log("Deleting devDependencies.json...");
     unlinkSync(devDependenciesJsonPath);
+}
+
+function enableWindows() {
+    console.log('Enable Windows support to the project...');
+    execSync(`react-native windows`);
+
+    unlinkSync(resolve('App.windows.js'))
 }
 
 function moveAppJs() {
@@ -89,6 +97,7 @@ function updatePackageJson() {
 
 
 installDevDependencies();
+enableWindows();
 moveAppJs();
 updatePackageJson();
 

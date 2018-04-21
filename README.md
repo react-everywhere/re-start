@@ -102,6 +102,12 @@ npm/yarn run web
 ```sh
 npm/yarn run windows
 ```
+Windows platforms needs to have installed the `Windows 10 SDK Build 14393` to be
+able to be build. A certificate is needed to sign the binary, follow the
+[instructions](https://msdn.microsoft.com/en-us/library/windows/apps/br230260(v=vs.110).aspx)
+to create or update the sign certificate. After that, a pop-up window would
+appear during the first time you exec the build process asking to install the
+certificate you've just created, just accept it.
 
 ### Build for production
 #### Android/iOS
