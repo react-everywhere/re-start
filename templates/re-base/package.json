@@ -1,11 +1,6 @@
 {
   "name": "react-native-template-re-base",
-  "version": "0.2.1",
-  "description": "react-native template to target multiple platforms.",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:react-everywhere/re-start.git"
-  },
+  "description": "react-native template to target multiple platforms",
   "keywords": [
     "re-base",
     "react",
@@ -18,12 +13,17 @@
     "native"
   ],
   "author": "Amogh Banta",
-  "contributors": [
-    "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>"
-  ],
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
   },
-  "homepage": "https://github.com/react-everywhere/re-start/issues"
+  "contributors": [
+    "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>"
+  ],
+  "homepage": "https://github.com/react-everywhere/re-start/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:react-everywhere/re-start.git"
+  },
+  "version": "0.3.2"
 }

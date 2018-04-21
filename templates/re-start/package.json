@@ -1,11 +1,6 @@
 {
   "name": "react-native-template-re-start",
-  "version": "0.51.0",
-  "description": "react-native template to target multiple platforms.",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:react-everywhere/re-start.git"
-  },
+  "description": "react-native template to target multiple platforms with re-dux and re-route",
   "keywords": [
     "re-start",
     "react",
@@ -17,17 +12,22 @@
     "everywhere",
     "native"
   ],
-  "author": "Amogh Banta",
-  "contributors": [
-    "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>"
-  ],
-  "license": "MIT",
   "dependencies": {
     "react-native-template-re-dux": "0.2.1",
     "react-native-template-re-route": "0.2.1"
   },
+  "author": "Amogh Banta",
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
   },
-  "homepage": "https://github.com/react-everywhere/re-start/issues"
+  "contributors": [
+    "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>"
+  ],
+  "homepage": "https://github.com/react-everywhere/re-start/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:react-everywhere/re-start.git"
+  },
+  "version": "0.3.2"
 }
