@@ -1,8 +1,10 @@
 {
   "name": "re-start-templates",
   "version": "0.3.2",
+  "private": true,
   "scripts": {
     "add": "all-contributors add",
+    "build": "scripts/build.js",
     "generate": "all-contributors generate"
   },
   "description": "react-native templates collection to target multiple platforms.",
@@ -29,5 +31,16 @@
   "bugs": {
     "url": "https://github.com/react-everywhere/re-start"
   },
-  "homepage": "https://github.com/react-everywhere/re-start/issues"
+  "homepage": "https://github.com/react-everywhere/re-start/issues",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-native-web": "^0.6.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "electron": "^1.8.4",
+    "react-scripts": "^1.1.4",
+    "rnpm-plugin-windows": "^0.2.8"
+  }
 }
