@@ -25,5 +25,10 @@
     "type": "git",
     "url": "git@github.com:react-everywhere/re-start.git"
   },
-  "version": "0.3.2"
+  "version": "0.3.2",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-native-web": "^0.6.1"
+  }
 }

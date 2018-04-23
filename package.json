@@ -35,7 +35,13 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-native-web": "^0.6.1"
+    "react-native-web": "^0.6.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-native": "^4.2.0",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-plugin-transform-react-remove-prop-types": "^0.4.13",

@@ -245,5 +245,5 @@ bower_components
 .bower-registry
 .bower-tmp
 
-templates/re-base/dependencies.json
-templates/re-base/devDependencies.json
+dependencies.json
+devDependencies.json

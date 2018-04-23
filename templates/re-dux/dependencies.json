@@ -1,9 +1,0 @@
-{
-  "react": "^16.3.2",
-  "react-dom": "^16.3.2",
-  "react-native-web": "^0.6.1",
-  "react-native-windows": "^0.50.0",
-  "react-redux": "5.0.6",
-  "redux": "3.7.2",
-  "redux-thunk": "2.2.0"
-}
