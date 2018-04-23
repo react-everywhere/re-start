@@ -27,7 +27,7 @@ function updateJson(file, newData)
 
     data = Object.assign(JSON.parse(data), newData)
 
-    writeFile(file, JSON.stringify(data, null, 2), function(error)
+    writeFile(file, JSON.stringify(data, null, 2)+'\n', function(error)
     {
       if(error) throw error
     })
