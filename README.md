@@ -6,14 +6,15 @@
 
 ## Aim of the project
 * Target multiple platforms (Android, iOS, Web, Windows[UWP] and Electron[macOS,
-  Ubuntu, Windows]) with react native' APIs and a single codebase.
+  Linux, Windows]) with react native' APIs and a single codebase.
 * Follow best practices while doing the above.
 * Cut out the time and effort it takes to setup the project (based on
   `create-react-app`).
-* Achieve 'Write once use everywhere' with react-native (though react strictly
-  says 'Learn once use anywhere').
+* Achieve [write once run everywhere](https://en.wikipedia.org/wiki/Write_once,_run_anywhere)
+  with react-native (though react strictly says 'Learn once use anywhere').
 * Mitigate git cloning or manual upgrading of boiler plates, which is possible
-  because this project is a react-native [template](https://github.com/facebook/react-native/pull/12548). :tada:
+  because this project is a react-native
+  [template](https://github.com/facebook/react-native/pull/12548). :tada:
 
 ## Structure of the project
 
@@ -29,8 +30,9 @@
 | `re-start`    | `re-base` combined with redux and react-router    | [![npm version](https://badge.fury.io/js/react-native-template-re-start.svg)](https://badge.fury.io/js/react-native-template-re-start) |
 
 ## Usage
+
 ### Pre-requisites
-- Node.js & npm on your system([follow this](https://docs.npmjs.com/getting-started/installing-node))
+- [Node.js & npm](https://docs.npmjs.com/getting-started/installing-node)
 - react-native CLI (`npm install -g react-native-cli`)
 
 ### Install
@@ -56,6 +58,7 @@
 4. Your project should now be ready to build apps for the different platforms.
 
 #### Notes:
+
 - If the `./installAdditionalDependencies.js` script fails due to some reason,
   you can do it manually by copying the contents of `devDependencies.json` to
   your `package.json` file `devDependencies` object and adding following to the
@@ -74,23 +77,20 @@
 - make sure that the version of react-native-windows is same as your
   react-native version, if you are targeting windows support.
 
----
-
 ### Run the project on a specific platform
 
-#### Android
+#### Android/iOS
 ```sh
 npm/yarn run android
+npm/yarn run ios
 ```
+In case of problems, this
+[tutorial](https://facebook.github.io/react-native/docs/running-on-device.html)
+will help you to configure your environment.
 
 #### Desktop (Electron)
 ```sh
 npm/yarn run electron
-```
-
-#### iOS
-```sh
-npm/yarn run ios
 ```
 
 #### Web
@@ -110,13 +110,11 @@ appear during the first time you exec the build process asking to install the
 certificate you've just created, just accept it.
 
 ### Build for production
-#### Android/iOS
+
+#### Android
 ```sh
-npm/yarn run web
+npm/yarn run android:release
 ```
-In case of problems, this
-[tutorial](https://facebook.github.io/react-native/docs/running-on-device.html)
-will help you to configure your environment.
 
 #### Web
 ```sh
@@ -124,26 +122,20 @@ npm/yarn run web:release
 ```
 This will build your production ready bundle
 
--------
-
 ## Some very useful cross platform compatible libraries
 - [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 - [axios](https://github.com/mzabriskie/axios)
 - [react-router](https://github.com/ReactTraining/react-router)
 - [re-render](https://github.com/amoghbanta/re-render) (this is experimental and a WIP)
 
--------
-
 ## Progress
-- [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))<br/>
-- [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))<br/>
-- [x] Support for electron <br/>
-- [x] Compatibility with React 16 <br/>
-- [ ] Add Docs and FAQs <br/>
-- [ ] Configure Travis and Greenkeeper <br/>
-- [ ] Interactive CLI to create templates and components <br/>
-
----
+- [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))
+- [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))
+- [x] Support for electron
+- [x] Compatibility with React 16
+- [ ] Add Docs and FAQs
+- [ ] Configure Travis and Greenkeeper
+- [ ] Interactive CLI to create templates and components
 
 ## Running demo on Web, Android, iOS, Windows(Universal) and Electron
 
@@ -156,8 +148,6 @@ This will build your production ready bundle
 <img src="https://s21.postimg.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450"  width="260">
 <img src="https://s2.postimg.org/edxytckih/ezgif.com-video-to-gif.gif" height="450"  width="350">
 </p>
-
-------
 
 ## Contributors
 
