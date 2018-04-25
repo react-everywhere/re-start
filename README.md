@@ -163,6 +163,7 @@ Full list of contributors can be found [here](https://github.com/react-everywher
 
 - [DigiCred Technologies](https://github.com/DigiCred)
 - [Quantum BA](https://quantum-ba.com/)
+- [UnifyMe](http://www.unifyme.me/)
 
 ## LICENSE
 
