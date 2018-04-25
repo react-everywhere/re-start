@@ -83,6 +83,7 @@ function updatePackageJson() {
       "eject": "react-scripts eject",
       "electron": "electron .",
       "ios": "react-native run-ios",
+      "ios:release": "react-native bundle --platform=ios",
       "preandroid": "scripts/preandroid.sh",
       "preelectron": "PUBLIC_URL=. npm run web:release",
       "release": "npm run android:release && npm run web:release",
