@@ -41,7 +41,7 @@ function installDevDependencies() {
     if (getYarnVersionIfAvailable()) {
         execSync(`yarn add ${depsToInstall} -D`, {stdio: 'inherit'});
     } else {
-        execSync(`npm install ${depsToInstall} --save`);
+        execSync(`npm install ${depsToInstall} --save-dev`);
     }
 
     console.log("Deleting devDependencies.json...");
