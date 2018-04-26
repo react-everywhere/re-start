@@ -53,29 +53,9 @@
    `re-start` template depend of both `re-route` and `re-dux`, be sure to
    install them first in that order.
 3. Since `react-native-template` doesn't support adding `devDependencies` and
-   custom scripts to `package.json`, exec `./installAdditionalDependencies.js`
-   to finish the project configuration.
+   custom scripts to `package.json`, exec `./finishInstall.js` to finish the
+   project configuration.
 4. Your project should now be ready to build apps for the different platforms.
-
-#### Notes:
-
-- If the `./installAdditionalDependencies.js` script fails due to some reason,
-  you can do it manually by copying the contents of `devDependencies.json` to
-  your `package.json` file `devDependencies` object and adding following to the
-  `scripts` object:
-  ```json
-  {
-    "scripts": {
-      "web": "node scripts/start.js",
-      "build": "node scripts/build.js"
-    }
-  }
-  ```
-- `react-native-web` currently (20th of July, 2017) supports React/ReactDOM
-  15.4, 15.5, or 15.6, so make sure you do not upgrade if you want support for
-  web.
-- make sure that the version of react-native-windows is same as your
-  react-native version, if you are targeting windows support.
 
 ### Run the project on a specific platform
 
