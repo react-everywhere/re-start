@@ -48,6 +48,21 @@ function installDevDependencies() {
     unlinkSync(devDependenciesJsonPath);
 }
 
+// Add `react-native-web` plugin to `.babelrc` file
+function updateBabelrc() {
+  const file = './.babelrc'
+  const babelrc = require(file)
+
+  let {plugins} = babelrc
+  if(!plugins) plugins = []
+
+  plugins.push('react-native-web')
+
+  babelrc.plugins = plugins
+
+  writeFileSync(file, JSON.stringify(babelrc, null, 2)+'\n')
+}
+
 function enableWindows() {
     console.log('Enable Windows support to the project...');
     execSync(`react-native windows`);
@@ -101,6 +116,7 @@ function updatePackageJson() {
 
 
 installDevDependencies();
+updateBabelrc();
 enableWindows();
 moveAppJs();
 updatePackageJson();
