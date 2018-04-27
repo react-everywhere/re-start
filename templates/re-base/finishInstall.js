@@ -80,6 +80,10 @@ function moveAppJs() {
     renameSync(src, dest);
 }
 
+function updateGitIgnore() {
+  writeFileSync('.gitignore', 'electron/\npublic/favicon*\n', {flag: 'a'})
+}
+
 function updatePackageJson() {
     const fileName = "package.json";
     const file = require(resolve(fileName));
@@ -97,11 +101,15 @@ function updatePackageJson() {
       "android:release": "cd android && ./gradlew assembleRelease",
       "eject": "react-scripts eject",
       "electron": "electron .",
+      "electron:release": "electron-packager . --all --asar --icon=/tmp/app --overwrite --out=electron",
+      "icon-gen": "icon-gen -i resources/icon.svg -o /tmp && mv /tmp/favicon* public",
       "ios": "react-native run-ios",
       "ios:release": "react-native bundle --platform=ios",
       "preandroid": "scripts/preandroid.sh",
       "preelectron": "PUBLIC_URL=. npm run web:release",
-      "release": "npm run android:release && npm run web:release",
+      "preelectron:release": "npm run icon-gen",
+      "preweb:release": "npm run icon-gen",
+      "release": "npm run android:release && npm run electron:release && npm run ios:release && npm run web:release",
       "test:web": "react-scripts test --env=jsdom",
       "web": "react-scripts start",
       "web:release": "react-scripts build",
@@ -119,6 +127,7 @@ installDevDependencies();
 updateBabelrc();
 enableWindows();
 moveAppJs();
+updateGitIgnore();
 updatePackageJson();
 
 

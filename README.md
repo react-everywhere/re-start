@@ -96,6 +96,19 @@ certificate you've just created, just accept it.
 npm/yarn run android:release
 ```
 
+#### Electron
+```sh
+npm/yarn run electron:release
+```
+If you are running this on Linux or OSX, this will need you have `wine` 1.6
+installed in your system because setting the Windows app icon makes usage
+internally of the [node-rcedit](https://github.com/atom/node-rcedit) package.
+
+#### iOS
+```sh
+npm/yarn run ios:release
+```
+
 #### Web
 ```sh
 npm/yarn run web:release
