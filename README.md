@@ -115,6 +115,11 @@ npm/yarn run web:release
 ```
 This will build your production ready bundle
 
+#### Windows
+```sh
+npm/yarn run windows:release
+```
+
 ## Some very useful cross platform compatible libraries
 - [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 - [axios](https://github.com/mzabriskie/axios)

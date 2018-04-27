@@ -4,7 +4,7 @@
 
 const {execSync} = require('child_process');
 const {existsSync, readFileSync, renameSync, unlinkSync, writeFileSync} = require('fs');
-const {resolve} = require('path');
+const {basename, resolve} = require('path');
 
 /**
  * Use Yarn if available, it's much faster than the npm client.
@@ -90,6 +90,17 @@ function updatePackageJson() {
 
     //these are the scripts that will be added to package.json
     console.log(`Adding scripts for web to package.json`);
+
+    const projectName = basename(__dirname)
+    const windows_release =
+    [
+      'react-native', 'bundle', '--platform=windows',
+      '--entry-file', 'index.js',
+      '--assets-dest', `windows/${projectName}/ReactAssets`,
+      '--bundle-output', `windows/${projectName}/ReactAssets/index.windows.bundle`,
+      '--dev', 'false'
+    ].join(' ')
+
     Object.assign(file.scripts,
     {
       "android": "react-native run-android",
@@ -109,11 +120,12 @@ function updatePackageJson() {
       "preelectron": "PUBLIC_URL=. npm run web:release",
       "preelectron:release": "npm run icon-gen",
       "preweb:release": "npm run icon-gen",
-      "release": "npm run android:release && npm run electron:release && npm run ios:release && npm run web:release",
+      "release": "npm run android:release && npm run electron:release && npm run ios:release && npm run web:release && npm run windows:release",
       "test:web": "react-scripts test --env=jsdom",
       "web": "react-scripts start",
       "web:release": "react-scripts build",
-      "windows": "react-native run-windows"
+      "windows": "react-native run-windows",
+      "windows:release": windows_release
     })
 
     // Electron entry point
