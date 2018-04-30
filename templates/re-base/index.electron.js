@@ -2,43 +2,70 @@
  * Electron platform entry point
  */
 
-// HACK Electron uses the `main` field from the `package.json` file to detect
-// its entry point file, so if the project is used as a dependency instead of an
-// Electron app, we need to check the environment to be able to return the
-// project correct main source code file instead of exec this one
-if(!process.versions.electron || require.main !== module)
-  return require('./src/App');
+ const {join, normalize} = require('path');
+
+ const {app, BrowserWindow, protocol} = require('electron');
 
 
-const {app, BrowserWindow} = require('electron');
+ const PROTOCOL = 'file';
+
+ const options =
+ {
+   icon: `${PROTOCOL}:///favicon-288.png`,
+   webPreferences: {
+     nodeIntegration: false
+   }
+ };
+
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
+function onClosed() {
+    // Dereference the window object, usually you would store windows
+    // in an array if your app supports multi windows, this is the time
+    // when you should delete the corresponding element.
+    mainWindow = null
+}
+
 function createWindow() {
     // Create the browser window.
-    mainWindow = new BrowserWindow();
+    mainWindow = new BrowserWindow(options);
 
     // and load the index.html of the app.
-    mainWindow.loadURL(`file://${__dirname}/build/index.html`);
+    mainWindow.loadURL(`${PROTOCOL}:///index.html`);
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
 
     // Emitted when the window is closed.
-    mainWindow.on('closed', function () {
-        // Dereference the window object, usually you would store windows
-        // in an array if your app supports multi windows, this is the time
-        // when you should delete the corresponding element.
-        mainWindow = null
-    })
+    mainWindow.on('closed', onClosed);
+}
+
+// Handler of `file://` scheme to load resources inside Electron, based on
+// https://github.com/electron/electron/issues/2242#issuecomment-299645388
+function handler({url}, callback) {
+    // Strip protocol
+    let path = url.substr(PROTOCOL.length + 1);
+
+    // Build complete path for node require function
+    path = join(__dirname, path);
+
+    // Replace backslashes by forward slashes (windows)
+    path = normalize(path);
+
+    callback({path});
 }
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow);
+app.on('ready', function() {
+    protocol.interceptFileProtocol(PROTOCOL, handler);
+
+    createWindow();
+});
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {

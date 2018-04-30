@@ -111,15 +111,15 @@ function updatePackageJson() {
       "android:log": "react-native log-android",
       "android:release": "cd android && ./gradlew assembleRelease",
       "eject": "react-scripts eject",
-      "electron": "electron .",
-      "electron:release": "electron-packager . --all --asar --icon=/tmp/app --overwrite --out=electron",
-      "icon-gen": "icon-gen -i resources/icon.svg -o /tmp && mv /tmp/favicon* public",
+      "electron": "electron build",
+      "electron:release": "electron-packager build --all --asar --icon=/tmp/app --overwrite --out=electron",
+      "icon-gen": "icon-gen -i resources/icon.svg -o /tmp && cp /tmp/favicon-228.png /tmp/app.png && mv /tmp/favicon* public",
       "ios": "react-native run-ios",
       "ios:release": "react-native bundle --platform=ios",
       "preandroid": "scripts/preandroid.sh",
-      "preelectron": "PUBLIC_URL=. npm run web:release",
-      "preelectron:release": "npm run icon-gen",
-      "preweb:release": "npm run icon-gen",
+      "preelectron": "PUBLIC_URL=. npm run web:release && cp index.electron.js build/index.js && echo {} > build/package.json",
+      "preelectron:release": "npm run preelectron",
+      "preweb:release": "npm run preweb && npm run icon-gen",
       "release": "npm run android:release && npm run electron:release && npm run ios:release && npm run web:release && npm run windows:release",
       "test:web": "react-scripts test --env=jsdom",
       "web": "react-scripts start",
@@ -127,9 +127,6 @@ function updatePackageJson() {
       "windows": "react-native run-windows",
       "windows:release": windows_release
     })
-
-    // Electron entry point
-    file.main = 'index.electron.js'
 
     writeFileSync(fileName, JSON.stringify(file, null, 2));
 }
