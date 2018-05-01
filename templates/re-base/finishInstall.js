@@ -120,7 +120,7 @@ function updatePackageJson() {
       "preandroid": "scripts/preandroid.sh",
       "preelectron": "PUBLIC_URL=. npm run web:release && cp index.electron.js build/index.js && echo {} > build/package.json",
       "preelectron:release": "npm run preelectron",
-      "preweb:release": "npm run preweb && npm run icon-gen",
+      "preweb:release": "npm run icon-gen",
       "release": "npm run android:release && npm run electron:release && npm run ios:release && npm run web:release && npm run windows:release",
       "test:web": "react-scripts test --env=jsdom",
       "web": "react-scripts start",
@@ -141,5 +141,5 @@ updateGitIgnore();
 updatePackageJson();
 
 
-// We have already installed the aditional dependencies, delete ourselves
+// We have already finished the install, delete ourselves
 unlinkSync(__filename);
