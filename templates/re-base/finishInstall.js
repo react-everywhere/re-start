@@ -51,7 +51,7 @@ function installDevDependencies() {
 // Add `react-native-web` plugin to `.babelrc` file
 function updateBabelrc() {
   const file = './.babelrc'
-  const babelrc = require(file)
+  const babelrc = JSON.parse(readFileSync(file))
 
   let {plugins} = babelrc
   if(!plugins) plugins = []
