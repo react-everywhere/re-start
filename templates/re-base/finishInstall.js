@@ -114,6 +114,7 @@ function updatePackageJson() {
       "electron": "electron build",
       "electron:release": "electron-packager build --all --asar --icon=/tmp/app --overwrite --out=electron",
       "icon-gen": "icon-gen -i resources/icon.svg -o /tmp && cp /tmp/favicon-228.png /tmp/app.png && mv /tmp/favicon* public",
+      "install": "node scripts/install.js",
       "ios": "react-native run-ios",
       "ios:release": "react-native bundle --platform=ios",
       "preandroid": "scripts/preandroid.sh",
