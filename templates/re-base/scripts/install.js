@@ -3,7 +3,7 @@
 const {readFileSync, writeFileSync} = require('fs')
 
 
-// Enable `react-native-web` in webpackage by directly modifying files in `react-scripts`
+// Enable `react-native-web` in webpack by directly modifying files in `react-scripts`
 const files =
 [
   'jest/babelTransform',
@@ -16,5 +16,5 @@ files.forEach(function(name)
   const path = `node_modules/react-scripts/config/${name}.js`
   const data = readFileSync(path, 'utf8')
 
-  writeFileSync(path, data.replace('babelrc: true,', 'babelrc: true,\nplugins: [\'react-native-web\'],'))
+  writeFileSync(path, data.replace('babelrc: false,', 'babelrc: false,\nplugins: [\'react-native-web\'],'))
 })

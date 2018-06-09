@@ -59,10 +59,6 @@ function enableWindows() {
     unlinkSync(resolve('App.windows.js'))
 }
 
-function enableBabelrc() {
-  execSync(install);
-}
-
 function moveAppJs() {
   const src  = resolve('App.js')
   const dest = resolve('src', 'App.js')
@@ -128,7 +124,6 @@ function updatePackageJson() {
 
 installDevDependencies();
 enableWindows();
-enableBabelrc();
 moveAppJs();
 updateGitIgnore();
 updatePackageJson();
