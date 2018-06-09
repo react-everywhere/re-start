@@ -6,6 +6,7 @@ const {execSync} = require('child_process');
 const {existsSync, readFileSync, renameSync, unlinkSync, writeFileSync} = require('fs');
 const {basename, resolve} = require('path');
 
+
 /**
  * Use Yarn if available, it's much faster than the npm client.
  * Return the version of yarn installed on the system, null if yarn is not available.
@@ -46,21 +47,6 @@ function installDevDependencies() {
 
     console.log("Deleting devDependencies.json...");
     unlinkSync(devDependenciesJsonPath);
-}
-
-// Add `react-native-web` plugin to `.babelrc` file
-function updateBabelrc() {
-  const file = './.babelrc'
-  const babelrc = JSON.parse(readFileSync(file))
-
-  let {plugins} = babelrc
-  if(!plugins) plugins = []
-
-  plugins.push('react-native-web')
-
-  babelrc.plugins = plugins
-
-  writeFileSync(file, JSON.stringify(babelrc, null, 2)+'\n')
 }
 
 function enableWindows() {
@@ -106,7 +92,7 @@ function updatePackageJson() {
       "android": "react-native run-android",
       "android:clean": "cd android && ./gradlew clean",
       "android:dev_menu": "adb shell input keyevent KEYCODE_MENU",
-      "android:emulator": "node scripts/android:emulator.sh",
+      "android:emulator": "scripts/android:emulator.sh",
       "android:kill_server": "fuser -k 8081/tcp || true",
       "android:log": "react-native log-android",
       "android:release": "cd android && ./gradlew assembleRelease",
@@ -117,7 +103,7 @@ function updatePackageJson() {
       "install": "node scripts/install.js",
       "ios": "react-native run-ios",
       "ios:release": "react-native bundle --platform=ios",
-      "preandroid": "node scripts/preandroid.sh",
+      "preandroid": "scripts/preandroid.sh",
       "preelectron": "PUBLIC_URL=. npm run web:release && cp index.electron.js build/index.js && echo {} > build/package.json",
       "preelectron:release": "npm run preelectron",
       "preweb:release": "npm run icon-gen",
@@ -134,7 +120,6 @@ function updatePackageJson() {
 
 
 installDevDependencies();
-updateBabelrc();
 enableWindows();
 moveAppJs();
 updateGitIgnore();
