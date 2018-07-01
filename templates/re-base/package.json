@@ -1,5 +1,5 @@
 {
-  "name": "react-native-template-re-base",
+  "name": "react-native-template-re-base_piranna",
   "description": "react-native template to target multiple platforms",
   "keywords": [
     "re-base",
@@ -25,7 +25,7 @@
     "type": "git",
     "url": "git@github.com:react-everywhere/re-start.git"
   },
-  "version": "0.3.2",
+  "version": "0.3.3-2",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
