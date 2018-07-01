@@ -27,8 +27,8 @@
   },
   "version": "0.3.2",
   "dependencies": {
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-native-web": "^0.8.3"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-native-web": "^0.8.6"
   }
 }
