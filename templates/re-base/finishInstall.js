@@ -7,9 +7,6 @@ const {existsSync, readFileSync, renameSync, unlinkSync, writeFileSync} = requir
 const {basename, resolve} = require('path');
 
 
-const install = "node scripts/install.js"
-
-
 /**
  * Use Yarn if available, it's much faster than the npm client.
  * Return the version of yarn installed on the system, null if yarn is not available.
@@ -59,25 +56,6 @@ function enableWindows() {
     unlinkSync(resolve('App.windows.js'))
 }
 
-// Add `react-native-web` plugin to `.babelrc` file
-function updateBabelrc() {
-  const file = './.babelrc'
-  const babelrc = JSON.parse(readFileSync(file))
-
-  let {plugins} = babelrc
-  if(!plugins) plugins = []
-
-  plugins.push('react-native-web')
-
-  babelrc.plugins = plugins
-
-  writeFileSync(file, JSON.stringify(babelrc, null, 2)+'\n')
-}
-
-function enableBabelrc() {
-  execSync(install);
-}
-
 function moveAppJs() {
   const src  = resolve('App.js')
   const dest = resolve('src', 'App.js')
@@ -122,7 +100,7 @@ function updatePackageJson() {
       "electron": "electron build",
       "electron:release": "electron-packager build --all --asar --icon=/tmp/app --overwrite --out=electron",
       "icon-gen": "icon-gen -i resources/icon.svg -o /tmp && cp /tmp/favicon-228.png /tmp/app.png && mv /tmp/favicon* public",
-      "install": install,
+      "install": "node scripts/install.js",
       "ios": "react-native run-ios",
       "ios:release": "react-native bundle --platform=ios",
       "preandroid": "scripts/preandroid.sh",
@@ -143,8 +121,6 @@ function updatePackageJson() {
 
 installDevDependencies();
 enableWindows();
-updateBabelrc();
-enableBabelrc();
 moveAppJs();
 updateGitIgnore();
 updatePackageJson();
