@@ -45,7 +45,7 @@ All you have to do is:
 ```
 react-native init <Your Project Name> --template <Template Name>
 ```
-- Since react-native-template does'nt support adding dev dependencies and custom scripts to package.json,
+- Since react-native-template doesn't support adding dev dependencies and custom scripts to package.json,
  so I have created a custom script to do that.
 ```
 node scripts/additionalDependencies.js
