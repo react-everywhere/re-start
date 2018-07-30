@@ -54,8 +54,8 @@ node scripts/additionalDependencies.js
  - If the above script fails due to some reason, you can do it manually by copying the contents
  of devDependencies.json to your package.json's devDependencies object and adding following to the scripts object.
  ```
-"web": "node scripts/start.js",
-"build": "node scripts/build.js"
+"web": "react-scripts start",
+"build": "react-scripts build"
 ```
 - make sure that the version of react-native-windows is same as your react-native version, if you are targeting windows support.
 
