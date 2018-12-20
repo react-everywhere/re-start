@@ -3,55 +3,13 @@
 'use strict';
 
 const {execSync} = require('child_process');
-const {existsSync, readFileSync, renameSync, unlinkSync, writeFileSync} = require('fs');
+const {existsSync, renameSync, unlinkSync, writeFileSync} = require('fs');
 const {basename, resolve} = require('path');
 
 
-/**
- * Use Yarn if available, it's much faster than the npm client.
- * Return the version of yarn installed on the system, null if yarn is not available.
- */
-function getYarnVersionIfAvailable() {
-    let yarnVersion;
-    try {
-        // execSync returns a Buffer -> convert to string
-        yarnVersion = (execSync('yarn --version', {
-            stdio: [0, 'pipe', 'ignore'],
-        }).toString() || '').trim();
-    } catch (error) {
-        return null;
-    }
-    return yarnVersion;
-}
-
-function installDevDependencies() {
-    console.log('Adding dev dependencies for the project...');
-
-    const devDependenciesJsonPath = resolve('devDependencies.json');
-    const devDependencies = JSON.parse(readFileSync(devDependenciesJsonPath));
-    let depsToInstall = [];
-
-    for (const depName in devDependencies) {
-        const depVersion = devDependencies[depName];
-        const depToInstall = `${depName}@${depVersion}`;
-        depsToInstall.push(depToInstall);
-    }
-
-    depsToInstall = depsToInstall.join(' ');
-    console.log(`Adding ${depsToInstall}...`);
-    if (getYarnVersionIfAvailable()) {
-        execSync(`yarn add ${depsToInstall} -D`, {stdio: 'inherit'});
-    } else {
-        execSync(`npm install ${depsToInstall} --save-dev`);
-    }
-
-    console.log("Deleting devDependencies.json...");
-    unlinkSync(devDependenciesJsonPath);
-}
-
 function enableWindows() {
     console.log('Enable Windows support to the project...');
-    execSync(`react-native windows`);
+    execSync(`react-native windows`, {stdio: 'inherit'});
 
     unlinkSync(resolve('App.windows.js'))
 }
@@ -119,7 +77,6 @@ function updatePackageJson() {
 }
 
 
-installDevDependencies();
 enableWindows();
 moveAppJs();
 updateGitIgnore();
