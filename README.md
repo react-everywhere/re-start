@@ -127,7 +127,7 @@ npm/yarn run windows:release
 - [re-render](https://github.com/amoghbanta/re-render) (this is experimental and a WIP)
 
 ## Progress
-- [x] support for web ([react-native-web](https://github.com/necolas/react-native-web))
+- [x] support for web ([react-native-web_improved](https://github.com/piranna/react-native-web_improved))
 - [x] support for Windows ([react-native-windows](https://github.com/ReactWindows/react-native-windows))
 - [x] Support for electron
 - [x] Compatibility with React 16
