@@ -50,7 +50,7 @@ function updatePackageJson() {
       "android": "react-native run-android",
       "android:clean": "cd android && ./gradlew clean",
       "android:dev_menu": "adb shell input keyevent KEYCODE_MENU",
-      "android:emulator": "scripts/android:emulator.sh",
+      "android:emulator": "scripts/android:emulator.js",
       "android:kill_server": "fuser -k 8081/tcp || true",
       "android:log": "react-native log-android",
       "android:release": "cd android && ./gradlew assembleRelease",
