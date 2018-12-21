@@ -160,6 +160,7 @@ Full list of contributors can be found [here](https://github.com/react-everywher
 ## Companies that contribute to `re-start`'s development
 
 - [DigiCred Technologies](https://github.com/DigiCred)
+- [Fundació i2CAT](http://www.i2cat.net/)
 - [Quantum BA](https://quantum-ba.com/)
 - [UnifyMe](http://www.unifyme.me/)
 
