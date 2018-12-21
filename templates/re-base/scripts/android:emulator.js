@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {readdir}           = require('fs').promises
+const {readdir, readFile} = require('fs').promises
 const {spawn}             = require('child_process')
 const {basename, extname} = require('path')
 
@@ -14,21 +14,32 @@ const EMULATOR = `${env.ANDROID_HOME}/emulator`
 env.LD_LIBRARY_PATH = `${EMULATOR}/lib64:${EMULATOR}/lib64/qt/lib`
 
 
-readdir(`${env.HOME}/.android/avd/`)
-.then(function(files)
+Promise.all([
+  readdir(`${env.HOME}/.android/avd/`),
+  readFile(`${__dirname}/../android/build.gradle`, 'utf8')
+  .then(function(data)
+  {
+    const result = /minSdkVersion\s*=\s*(\d+)/.exec(data)
+    if(!result)
+      throw new Error('`minSdkVersion` not found in `build.gradle` file')
+
+    return parseInt(result[1])
+  })
+])
+.then(function([files, minSdkVersion])
 {
   let avd
-  let minSdkVersion = Infinity
+  let lowerSdkVersion = Infinity
 
   for(let file of files)
   {
     file = basename(file, extname(file))
 
     const sdkVersion = parseInt(/\d+$/.exec(file)[0])
-    if(sdkVersion < minSdkVersion)
+    if(minSdkVersion <= sdkVersion  && sdkVersion < lowerSdkVersion)
     {
       avd = file
-      minSdkVersion = sdkVersion
+      lowerSdkVersion = sdkVersion
     }
   }
 
