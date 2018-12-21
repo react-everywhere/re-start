@@ -25,7 +25,7 @@
     "type": "git",
     "url": "git@github.com:react-everywhere/re-start.git"
   },
-  "version": "0.3.3-2",
+  "version": "0.4.0",
   "dependencies": {
     "react-art": "^16.7.0",
     "react-dom": "^16.7.0",
