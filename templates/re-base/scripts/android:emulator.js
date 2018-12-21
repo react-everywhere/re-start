@@ -43,6 +43,8 @@ Promise.all([
     }
   }
 
+  if(!avd) throw new Error('`AVD` not found')
+
   return avd
 })
 .then(function(avd)
