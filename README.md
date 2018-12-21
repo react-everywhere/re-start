@@ -42,9 +42,10 @@
    ```sh
    react-native init <Your Project Name> --template re-base
    ```
-2. If you want to use a derived template like `re-dux` or `re-route`, install
-   them directly on top of the just created project. You'll probably get a
-   warning about the project already exists, just say it to overwrite the files.
+2. React Native don't support templates inheritance. If you want to use a
+   derived template like `re-dux` or `re-route`, install them directly on top of
+   the just created project. You'll probably get a warning about the project
+   already exists, just say it `yes` to overwrite the needed files.
    ```sh
    react-native init <Your Project Name> --template re-dux
    react-native init <Your Project Name> --template re-route
@@ -52,9 +53,9 @@
    ```
    `re-start` template depend of both `re-route` and `re-dux`, be sure to
    install them first in that order.
-3. Since `react-native-template` doesn't support adding `devDependencies` and
-   custom scripts to `package.json`, exec `./finishInstall.js` to finish the
-   project configuration.
+3. Since `react-native-template` doesn't support adding custom scripts to
+   `package.json`, exec `./finishInstall.js` to finish the project
+   configuration.
 4. Your project should now be ready to build apps for the different platforms.
 
 ### Run the project on a specific platform
