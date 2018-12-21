@@ -13,6 +13,9 @@
     "native"
   ],
   "dependencies": {
+    "react-art": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-native-web_improved": "^0.9.9",
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {readFile, writeFile} = require('fs')
+const {readdir, readFile, writeFile} = require('fs')
 
 
 function updateDependencies(template, dependencies, packageJson)
@@ -38,12 +38,16 @@ function updateJson(file, newData)
 const {author, bugs, contributors, dependencies, devDependencies, homepage,
   license, repository, version} = require('../package.json')
 
-updateJson('templates/re-base/devDependencies.json' , devDependencies)
-
 const packageJson = {author, bugs, contributors, homepage, license, repository,
   version}
 
-updateDependencies('re-base' , dependencies, packageJson)
-updateDependencies('re-dux'  , dependencies, packageJson)
-updateDependencies('re-route', dependencies, packageJson)
-updateDependencies('re-start', dependencies, packageJson)
+readdir('templates', function(error, files)
+{
+  if(error) throw error
+
+  for(const file of files)
+  {
+    updateJson(`templates/${file}/devDependencies.json`, devDependencies)
+    updateDependencies(file , dependencies, packageJson)
+  }
+})
