@@ -3,7 +3,6 @@
 const {readFileSync, writeFileSync} = require('fs')
 
 
-// Enable `react-native-web` in webpack by directly modifying files in `react-scripts`
 function replace(name)
 {
   const {dest, packageName, src} = this
@@ -21,12 +20,11 @@ const files =
   'webpack.config'
 ]
 
-files.forEach(function(name)
+files.forEach(replace,
 {
-  const path = `node_modules/react-scripts/config/${name}.js`
-  const data = readFileSync(path, 'utf8')
-
-  writeFileSync(path, data.replace('babelrc: false,', 'babelrc: false,\nplugins: [\'react-native-web\'],'))
+  dest: 'babelrc: false,\nplugins: [\'react-native-web\'],',
+  packageName: 'react-scripts',
+  src: 'babelrc: false,'
 })
 
 // Replace usage of `react-native-web` for `react-native-web_improved`
