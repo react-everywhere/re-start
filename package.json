@@ -49,7 +49,7 @@
     "electron": "^4.0.0",
     "electron-packager": "^13.0.1",
     "icon-gen": "^2.0.0",
-    "react-scripts": "^2.1.1",
+    "react-scripts": "^2.1.3",
     "rnpm-plugin-windows": "^0.2.8"
   }
 }

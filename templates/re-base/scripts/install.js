@@ -18,8 +18,7 @@ function replace(name)
 const files =
 [
   'jest/babelTransform',
-  'webpack.config.dev',
-  'webpack.config.prod'
+  'webpack.config'
 ]
 
 files.forEach(function(name)
