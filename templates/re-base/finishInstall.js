@@ -4,7 +4,7 @@
 
 const {execSync} = require('child_process');
 const {existsSync, renameSync, unlinkSync, writeFileSync} = require('fs');
-const {basename, resolve} = require('path');
+const {resolve} = require('path');
 
 
 function enableWindows() {
@@ -35,13 +35,13 @@ function updatePackageJson() {
     //these are the scripts that will be added to package.json
     console.log(`Adding scripts for web to package.json`);
 
-    const projectName = basename(__dirname)
+    const assetsDest = `windows/${file.name}/ReactAssets`
     const windows_release =
     [
       'react-native', 'bundle', '--platform=windows',
       '--entry-file', 'index.js',
-      '--assets-dest', `windows/${projectName}/ReactAssets`,
-      '--bundle-output', `windows/${projectName}/ReactAssets/index.windows.bundle`,
+      '--assets-dest', assetsDest,
+      '--bundle-output', `${assetsDest}/index.windows.bundle`,
       '--dev', 'false'
     ].join(' ')
 
