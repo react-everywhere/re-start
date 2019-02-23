@@ -33,22 +33,22 @@
   },
   "homepage": "https://github.com/react-everywhere/re-start/issues",
   "dependencies": {
-    "react-art": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react-art": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-native-web_improved": "^0.9.9",
-    "react-redux": "^6.0.0",
+    "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-router-native": "^4.3.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "babel-plugin-react-native-web": "^0.9.9",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.21",
-    "electron": "^4.0.0",
-    "electron-packager": "^13.0.1",
+    "babel-plugin-react-native-web": "^0.10.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "electron": "^4.0.5",
+    "electron-packager": "^13.1.0",
     "icon-gen": "^2.0.0",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^2.1.5",
     "rnpm-plugin-windows": "^0.2.8"
   }
 }

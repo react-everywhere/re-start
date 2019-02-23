@@ -27,8 +27,8 @@
   },
   "version": "0.4.0",
   "dependencies": {
-    "react-art": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react-art": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-native-web_improved": "^0.9.9"
   }
 }
