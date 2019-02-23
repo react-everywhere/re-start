@@ -16,7 +16,6 @@
     "react-art": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-native-web_improved": "^0.9.9",
-    "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-router-native": "^4.3.0"
   },
