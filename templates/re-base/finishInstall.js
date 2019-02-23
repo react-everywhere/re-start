@@ -35,16 +35,6 @@ function updatePackageJson() {
     //these are the scripts that will be added to package.json
     console.log(`Adding scripts for web to package.json`);
 
-    const assetsDest = `windows/${file.name}/ReactAssets`
-    const windows_release =
-    [
-      'react-native', 'bundle', '--platform=windows',
-      '--entry-file', 'index.js',
-      '--assets-dest', assetsDest,
-      '--bundle-output', `${assetsDest}/index.windows.bundle`,
-      '--dev', 'false'
-    ].join(' ')
-
     Object.assign(file.scripts,
     {
       "android": "react-native run-android",
@@ -72,7 +62,7 @@ function updatePackageJson() {
       "web:release": "react-scripts build",
       "web:release:serve": "serve -s build",
       "windows": "react-native run-windows",
-      "windows:release": windows_release
+      "windows:release": "scripts/windows:release.sh"
     })
 
     writeFileSync(fileName, JSON.stringify(file, null, 2));
