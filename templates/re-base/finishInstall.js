@@ -65,10 +65,12 @@ function updatePackageJson() {
       "preelectron": "scripts/preelectron.sh",
       "preelectron:release": "npm run preelectron",
       "preweb:release": "npm run icon-gen",
+      "preweb:release:serve": "npm run web:release",
       "release": "scripts/release.sh",
       "test:web": "react-scripts test --env=jsdom",
       "web": "react-scripts start",
       "web:release": "react-scripts build",
+      "web:release:serve": "serve -s build",
       "windows": "react-native run-windows",
       "windows:release": windows_release
     })
