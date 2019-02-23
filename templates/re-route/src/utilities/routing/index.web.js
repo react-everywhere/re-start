@@ -1,11 +1,11 @@
 import {
-  NativeRouter as Router,
+  BrowserRouter as Router,
   Link,
   Route,
   Redirect,
   Switch,
   withRouter
-} from 'react-router-native'
+} from 'react-router-dom'
 
 
 /*

@@ -1,9 +1,7 @@
 import React from 'react';
 
 import EntryScreen from './screens/EntryScreen';
-import Routing, {Router} from './utilities/routing/index';
-
-const Route = Routing.Route;
+import {Route, Router} from './utilities/routing'
 
 
 class App extends React.Component {
