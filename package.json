@@ -5,7 +5,9 @@
   "scripts": {
     "add": "all-contributors add",
     "build": "scripts/build.js",
-    "generate": "all-contributors generate"
+    "generate": "all-contributors generate",
+    "prepublishNpm": "npm run build",
+    "publishNpm": "scripts/publishNpm.sh"
   },
   "description": "react-native templates collection to target multiple platforms.",
   "repository": {
