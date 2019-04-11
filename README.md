@@ -2,7 +2,7 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![re-start](https://s4.postimg.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
+[![re-start](https://s28.postimage.org/4a0zw1egd/re-start_1.png)](https://postimg.org/image/6elcx4g2x/)
 
 ## Aim of the project
 * Target multiple platforms (Android, iOS, Web, Windows[UWP] and Electron[macOS,
@@ -139,13 +139,13 @@ npm/yarn run windows:release
 ## Running demo on Web, Android, iOS, Windows(Universal) and Electron
 
 <p align="center">
-<img src="https://s28.postimg.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450"  width="260">
-<img src="https://s28.postimg.org/nbneqad3h/58961a2a030da447844552.gif" height="450"  width="260">
-<img src="https://s28.postimg.org/aa1q0fop9/589619ef1b623465256988.gif" height="450"  width="260">
+<img src="https://s28.postimage.org/gmgva9rrh/58961a12afcd1276062762.gif" height="450"  width="260">
+<img src="https://s28.postimage.org/nbneqad3h/58961a2a030da447844552.gif" height="450"  width="260">
+<img src="https://s28.postimage.org/aa1q0fop9/589619ef1b623465256988.gif" height="450"  width="260">
 </p>
 <p align="center">
-<img src="https://s21.postimg.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450"  width="260">
-<img src="https://s2.postimg.org/edxytckih/ezgif.com-video-to-gif.gif" height="450"  width="350">
+<img src="https://s28.postimage.org/yuzzepj7b/ezgif_com_video_to_gif.gif" height="450"  width="260">
+<img src="https://s28.postimage.org/edxytckih/ezgif.com-video-to-gif.gif" height="450"  width="350">
 </p>
 
 ## Contributors
