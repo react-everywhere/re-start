@@ -48,7 +48,7 @@
     "babel-plugin-react-native-web": "^0.10.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "electron": "^4.0.5",
-    "electron-packager": "^13.1.0",
+    "electron-packager": "^14.0.1",
     "icon-gen": "^2.0.0",
     "react-scripts": "^2.1.5",
     "rnpm-plugin-windows": "^0.2.8",
