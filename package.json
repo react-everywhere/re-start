@@ -38,7 +38,7 @@
     "react-art": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-native-web_improved": "^0.9.9",
-    "react-redux": "^6.0.1",
+    "react-redux": "^7.1.1",
     "react-router-dom": "^4.3.1",
     "react-router-native": "^4.3.0",
     "redux": "^4.0.1",
