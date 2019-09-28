@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/react-everywhere/re-start/issues",
   "dependencies": {
-    "react-art": "^16.8.3",
+    "react-art": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-native-web_improved": "^0.9.9",
     "react-redux": "^6.0.1",
