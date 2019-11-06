@@ -51,7 +51,7 @@
     "electron-packager": "^13.1.0",
     "icon-gen": "^2.0.0",
     "react-scripts": "^2.1.5",
-    "rnpm-plugin-windows": "^0.2.8",
+    "rnpm-plugin-windows": "^0.3.8",
     "serve": "^10.1.2"
   }
 }
