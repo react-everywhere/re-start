@@ -50,7 +50,7 @@
     "electron": "^4.0.5",
     "electron-packager": "^13.1.0",
     "icon-gen": "^2.0.0",
-    "react-scripts": "^2.1.5",
+    "react-scripts": "^3.4.0",
     "rnpm-plugin-windows": "^0.2.8",
     "serve": "^10.1.2"
   }
