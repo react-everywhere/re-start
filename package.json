@@ -45,7 +45,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "babel-plugin-react-native-web": "^0.10.0",
+    "babel-plugin-react-native-web": "^0.12.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "electron": "^4.0.5",
     "electron-packager": "^13.1.0",
