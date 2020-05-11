@@ -40,7 +40,7 @@
     "react-native-web_improved": "^0.9.9",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
-    "react-router-native": "^4.3.0",
+    "react-router-native": "^5.2.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
