@@ -52,6 +52,6 @@
     "icon-gen": "^2.0.0",
     "react-scripts": "^2.1.5",
     "rnpm-plugin-windows": "^0.2.8",
-    "serve": "^10.1.2"
+    "serve": "^11.3.1"
   }
 }
