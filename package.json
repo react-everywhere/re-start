@@ -47,7 +47,7 @@
   "devDependencies": {
     "babel-plugin-react-native-web": "^0.10.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "electron": "^4.0.5",
+    "electron": "^9.0.1",
     "electron-packager": "^13.1.0",
     "icon-gen": "^2.0.0",
     "react-scripts": "^2.1.5",
